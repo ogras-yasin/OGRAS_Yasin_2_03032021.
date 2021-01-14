@@ -31,12 +31,12 @@ header img
 }
 
 .element
-{/*
+{
 	width: 150px;
 	height: 100px;
-	margin-right: 15px;
+	margin-right: 150px;
 	padding-bottom: 5px;
-*/
+
 }
 
 .element:nth-child(1)
@@ -61,11 +61,11 @@ footer
 	opacity: 0,8;
 }
 
-.titre-bas-liste
+/* .titre-bas-liste
 {
 	font-weight: bold;
 	color: black;
-}
+} */
 footer ul
 {
 	
@@ -78,33 +78,22 @@ footer ul
 	flex-direction: column;
 	justify-content: space-between;
 }
-footer li
-{
-	height: 45px;
-}
+
 #liste-colonne
 {
 	display: flex;
 	flex-direction: row;
-	color: green;
-}
-/*
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	color: black;
 }
 
-@font-face{
-	font-family: 'Raleway';
-	src:url('Raleway-VariableFont_wght.ttf');
-    src:url('Raleway-Italic-VariableFont_wght.ttf');
-}*/
-
-#id
+footer li
+{
+	line-height: 2.5;
+}
+footer strong
+{
+	font-weight: bold;
+}
 
 .nini h1
 {
