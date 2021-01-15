@@ -1,4 +1,4 @@
-/*(https://www.fontsquirrel.com) on January 7, 2021 */
+
 body
 {
 	font-family: 'Raleway', sans-serif;
@@ -61,11 +61,6 @@ footer
 	opacity: 0,8;
 }
 
-/* .titre-bas-liste
-{
-	font-weight: bold;
-	color: black;
-} */
 footer ul
 {
 	
@@ -79,7 +74,7 @@ footer ul
 	justify-content: space-between;
 }
 
-#liste-colonne
+footer #container
 {
 	display: flex;
 	flex-direction: row;
@@ -94,12 +89,29 @@ footer strong
 {
 	font-weight: bold;
 }
+/*(https://www.fontsquirrel.com) on January 7, 2021 */
+@media all and (max-width: 1024px)
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+{
+    p 
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+	}
+	footer #container
+	{
+		display: flex;
+		flex-direction: column;
+		color: blue;
+		border: 20px dotted brown
+	}
+	
 
-.nini h1
-{
-	font-family: 'ralewaythin','Raleway';
+
+
+
+
 }
-.nini
-{
-	color:lime;
-}
+.items:nth-child(1)
+{color: brown;}
