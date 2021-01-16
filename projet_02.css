@@ -58,9 +58,9 @@ header img
 footer
 {
 	background-color: #F2F2F2;
-	opacity: 0,8;
-}
 
+}
+/* 
 footer ul
 {
 	
@@ -72,7 +72,16 @@ footer ul
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} */
+
+footer li
+{
+	/* j'essaye les padding et margin */
+	 /* padding: 0.5px;
+	border: 2px solid royalblue;
+	margin: 0.5px; */
+} 
+
 
 footer #container
 {
@@ -80,14 +89,20 @@ footer #container
 	flex-direction: row;
 	color: black;
 }
-
-footer li
+/* .items */
+#container
 {
-	line-height: 2.5;
+	 margin-right: 80px; 
+	 /* pour differencier border */
+	 border: 10px solid blanchedalmond;
+	
 }
-footer strong
+.items
 {
-	font-weight: bold;
+	/* pour differencier border */
+	border: 5px dotted green;
+	margin-right: 100px;
+	margin-left: 
 }
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
 @media all and (max-width: 1024px)
@@ -103,15 +118,29 @@ footer strong
 	{
 		display: flex;
 		flex-direction: column;
-		color: blue;
-		border: 20px dotted brown
+		color: black;
+		/* border: 20px dotted brown; */
+		display: flex;
+		
+		flex-wrap: wrap;
+		justify-content: flex-end;
 	}
+	/* regle qui doit saplliquer a tout pas seulement responsive */
 	
 
 
 
-
-
 }
-.items:nth-child(1)
-{color: brown;}
+li:first-child 
+	{
+		color:black;
+		font-weight: bold;
+		padding-bottom: 12px;
+	}
+li
+{
+	padding:2px;
+	list-style-type: none;
+}
+/* .items:nth-child(1)
+{color: brown;} */
