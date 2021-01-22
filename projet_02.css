@@ -4,6 +4,75 @@ body
 	font-family: 'Raleway', sans-serif;
 }
 
+/* header */
+header
+/* ca permet de mettre en flex le logo et la liste */
+{
+	display:flex;
+	justify-content: space-between;
+}
+
+#logo_titre-principale
+{
+	/* comment separer sinscrire de hebergement? */
+	flex-direction: row;
+	color: blue
+} 
+
+header img 
+{
+	border: 5px solid darkmagenta;
+	width: 160px;
+	height: 70px;
+}
+
+#conteneur-nav
+{
+	
+	display:flex;
+	flex: flex-end;
+	flex-direction:row; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* border: 6px dotted yellowgreen; */
+	/* margin-bottom: 40px; */
+
+}
+/* TENTATIVE de separer item sincrire de hebergement */
+.element
+{
+	
+	margin-left: 20px;
+	margin-right: 20px;
+	list-style-type: none;
+	padding-top: 40px;
+
+}
+
+.element:nth-child(1)
+{
+	/* hebergements */
+	color:#0065FC;
+	border-top:4px solid #0065FC;
+	/* padding-top: 30px; */
+	order: 1;
+}
+.element:nth-child(2)
+{
+	/* activités */
+	color:black;
+	order: 2;
+}
+.element:nth-child(3)
+{
+	/* s'inscrire */
+	color:#0065FC;
+	font-weight: bold;
+	order: 3;
+}
+
+/* fin header */
+
 .container-section_hébergement-et-aside_les-plus-populaires
 {
 	border: 23px solid red;
@@ -87,7 +156,8 @@ section .filtres
  {color : black;}
 
 
-nav
+/* ---- second nav --- */
+.block-filtres
 {
 	display: flex;
 	flex-direction: row;
@@ -103,66 +173,10 @@ i
 	display: flex;
 }
 
-header
-/* ca permet de mettre en flex le logo et la liste */
-{
-	display:flex;
-	justify-content: space-between;
-}
-header img 
-{
-	border: 5px solid darkmagenta;
-	width: 160px;
-	height: 70px;
-}
-#logo_titre-principale
-{
-	/* comment separer sinscrire de hebergement? */
-	flex-direction: row;
-	color: blue
-}
 
-#conteneur-en-haut-à-droite
-{
-	
-	display:flex;
-	flex: flex-end;
-	flex-direction:row; 
-	flex-wrap: wrap;
-	justify-content: space-around;
-	border: 6px dotted yellowgreen;
-	/* margin-bottom: 40px; */
 
-}
-/* TENTATIVE de separer item sincrire de hebergement */
-.element
-{
-	
-	margin-left: 40px;
 
-}
 
-.element:nth-child(1)
-{
-	color:#0065FC;
-	border-top:4px solid darkorchid;
-	padding-top: 30px;
-	order: 1;
-	
-
-}
-
-.element:nth-child(2)
-{
-	color:black;
-	order: 2;
-}
-.element:nth-child(3)
-{
-	color:#0065FC;
-	font-weight: bold;
-	order: 3;
-}
 
 
 
@@ -186,33 +200,32 @@ footer .items
 	margin-left: 
 }
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
-@media all and (max-width: 1024px)
+@media all and (max-width: 600px)
+/* @media all and (max-width: 1024 px) par défault*/
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 {
-	nav 
+	#conteneur-nav 
 	{
 		flex-wrap:wrap ;
 
 	}
-	footer #container
-	{
-		display: flex;
-		flex-direction: column;
-		color: black;
-		/* border: 20px dotted brown; */
-		display: flex;
-		
-		flex-wrap: wrap;
-		justify-content: flex-end;
-	}
-
-
-	header
+	
+	/* header */
 	/* ca permet de mettre en flex le logo et la liste */
-	{
-		display:none;
+	/* {
+		display:;
 		justify-content: space-between;
-	}
+		
+	} */
+	
+	/* header
+	{
+		display: flex;
+		flex: none;
+	} */
+
+	
+/* 	
 	.element:nth-child(1)
 	{
 		color:#0065FC;
@@ -231,20 +244,26 @@ footer .items
 		color:#0065FC;
 		font-weight: bold;
 		order: 3;
-	}
+	} */
 
 
 
-header
-{
-	display: flex;
-	flex: none;
-}
 
 
 
 	/* regle qui doit saplliquer a tout pas seulement responsive */
-	
+	footer #container
+	{
+		display: flex;
+		flex-direction: column;
+		color: black;
+		/* border: 20px dotted brown; */
+		display: flex;
+		
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+
 
 
 
@@ -257,7 +276,8 @@ footer li:first-child
 		font-weight: bold;
 		font-size: 1.3em;
 	}
-li
+/* li footer */
+.items__list
 {
 	padding:2px;
 	list-style-type: none;
