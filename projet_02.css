@@ -42,10 +42,10 @@ body
 	padding: 12px;
 	margin: 12px;
 }
- /* .hébergement-img + p + p whyyyy it dosent work
+ .hébergement-img + p + p whyyyy it dosent work
 {
 font-weight: bold;
-} */
+}
 
 .carte-de-présentation-les-plus-populaires
 {
@@ -69,7 +69,7 @@ aside .les-plus-populaires-img__dimension-image
 
 
 
-section .fas
+ .fas
 {
 	color:#0065FC;
 }
@@ -83,7 +83,10 @@ section .filtres
 {
 	border: 54px solid darksalmon;
 } */
-.fa-map-marker-alt    {color : inherit;}
+ .icon-black  
+ {color : black;}
+
+
 nav
 {
 	display: flex;
@@ -143,6 +146,7 @@ header img
 {
 	color:#0065FC;
 	border-top:4px solid darkorchid;
+	padding-top: 30px;
 	order: 1;
 	
 
