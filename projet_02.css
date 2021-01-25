@@ -49,12 +49,12 @@ header img
 
 }
 
-.element:nth-child(1)
+/* .element:nth-child(1) */
+.heber
 {
 	/* hebergements */
 	color:#0065FC;
 	border-top:4px solid #0065FC;
-	/* padding-top: 30px; */
 	order: 1;
 }
 .element:nth-child(2)
@@ -73,88 +73,154 @@ header img
 
 /* fin header */
 
+/* petite section */
+
+.geolocalisation-et-filtres__geo-recherche {
+	display: flex;
+}
+
+
+
+
+
+
+
+
 .container-section_hébergement-et-aside_les-plus-populaires
 {
-	border: 23px solid red;
+	/* border: 23px solid red; */
 	display: flex;
 	
 }
 .carte-de-présentation-hébergement-à-marseille
 {
-	border: green dashed 4px;
+	/* border: green dashed 4px; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
+	margin:  20px 34px 20px 0;
+	/* overflow: hidden; */
 }
+
 
 .hébergement-à-marseille--dimension-image
 {
 	/* border: blue 12px solid; */	
 	height: 174px;
-	width: 220px;
-	border-radius: 45px 45px 0 0;
+	width: 274px; 
+	/* alltaki cok guzel ama ecranima uygun degil onun icin
+	simdilik ustekini koyuyom ama final'de alttakini width'fi
+	 kullan */
+	/* width: 340px;  */
+	border-radius: 23px 23px 0 0px;
+}
+.bold
+{
+	font-weight: bold;
+}
+
+.hébergement-img__description-chambre
+{
+	padding-left: 15px;
+}
+.hébergement-img-float {
+	float: left;
+	margin-top: 7px;
+	/* overflow: hidden; */
 }
 .hébergement-img
 /* peut être nommer "child" ? */
 {
-	border: gold dotted 7px;
-	flex-wrap: wrap;
-	border-radius: 45px;
+	/* border: gold dotted 7px; */
+	/* flex-wrap: wrap; */
+	border-radius: 23px;
 	background-color: white;
-	padding: 1px 10px;
-	margin: 7px;
+	padding: 1px 7px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-shadow: black 0 0 10px -4px;
+	line-height: 0.3;
+	
 }
 .présentation-hébergement-populaire
 {
 	/* color: darkorchid; */
-	padding: 12px;
-	margin: 12px;
+	padding: 40px 20px  ;
+	/* margin:  20px 12px 20px 0; 
+	bu cok guzzel ama bilgisarim bu olculeri alinca
+	ecrana column'mus gibi gosteriyor */
+	/* margin: 12px 12px 0 0; */
+	border-radius: 45px;
 }
- .hébergement-img + p + p whyyyy it dosent work
-{
-font-weight: bold;
-}
+
 
 .carte-de-présentation-les-plus-populaires
 {
-	border:  green dashed 4px;
+	/* border:  green dashed 4px; */
 	background-color: #F2F2F2;
+	margin:  20px 0px 20px 0;
 }
 aside .les-plus-populaires-img
 /* peut être nommer child aussi */
 {
 	/* border: sienna 5px dashed; */
-	border-radius: 45px;
+	border-radius: 23px;
 	background-color: white;
+	box-shadow: black 0 0 10px -4px;
+	 
+	height: auto;
+	width: 384px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.titre-img
+{
+	margin-top: 21px;
+}
+.float-img-populaires
+{
+	float: left;
+	/* width: 800px; ne prend pas en compte car p je pense */
+	margin: 7px 15px 7px 7px;
+
 }
 aside .les-plus-populaires-img__dimension-image
 {
 	/* border: 24px solid khaki; */
 	height: 200px;
-	font-weight: 90px;
-	border-radius: 45px 0 0 45px;
+	width: 200px;
+	border-radius: 23px 0 0 23px;
+	
+	
+
 }
+/* .clear
+{
+	clear: both;
+} */
 
-
-
+/* si je met "i.fas" ca annule toutes les autres
+règles comme 5 étoiles bleu par tout 
+et geolocalisation en bleu */
  .fas
 {
 	color:#0065FC;
+	/* border: turquoise solid 3px; */
 }
+
 section .filtres
 {	
 	padding-right: 80px;
 }
 
 
-/* .geolocalisation-et-filtres
-{
-	border: 54px solid darksalmon;
-} */
+
+/* couleur des icon */
  .icon-black  
  {color : black;}
-
+.icon-gray
+{color: #F2F2F2;}
 
 /* ---- second nav --- */
 .block-filtres
@@ -164,10 +230,7 @@ section .filtres
 	border: firebrick solid 3px
 
 }
-i 
-{
-	border: turquoise solid 3px;
-}
+
 #logo_geolocalisation
 {
 	display: flex;
@@ -199,17 +262,76 @@ footer .items
 	margin-right: 100px;
 	margin-left: 
 }
+
+.at-the-bottom
+{
+	/* width: 100%; */
+	font-weight:bold ;
+	text-transform: capitalize; 
+	margin: 12px 0 12px 12px;
+	width: 100%;
+}
+
+ .title-on-top 
+{
+	width: 100%;
+	font-weight: bold;
+	/* margin: 12px 0 27px 12px; */
+	margin-bottom: 27px;
+}
+
+/* .margin-left-img-populaire
+{
+	padding-left: 16px;
+} */
+
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
-@media all and (max-width: 600px)
+@media all and (max-width: 800px)
 /* @media all and (max-width: 1024 px) par défault*/
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 {
-	#conteneur-nav 
-	{
-		flex-wrap:wrap ;
-
-	}
 	
+/* mettre en column aside d'abord puis section */
+.carte-de-présentation-les-plus-populaires {
+	border-radius: unset;
+}
+.carte-de-présentation-hébergement-à-marseille {
+	background-color: white;
+}
+
+.container-section_hébergement-et-aside_les-plus-populaires
+{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+}
+
+	/* .heber */
+	div.element:nth-child(1)
+	{
+		border-top:unset ;
+		
+		padding-bottom: 40px;
+		border-bottom: #0065FC 3px solid;
+		/* box-shadow: 0px 04px 65px  */
+	}
+	/* .activites */
+	div.element:nth-child(2)
+	{
+		/* background-color: tomato; */
+		padding-bottom: 40px;
+		border-bottom: #F2F2F2 3px solid;
+	}
+	div.element:nth-child(3)
+	{
+		order:-1
+	}
+
+	/* .element:nth-child(3)
+	{
+		order: 1;
+	} */
+
 	/* header */
 	/* ca permet de mettre en flex le logo et la liste */
 	/* {
