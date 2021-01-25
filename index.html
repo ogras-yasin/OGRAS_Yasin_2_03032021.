@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="projet_02.css" />
+        <!-- <link rel="stylesheet" href="divboxnthchild.css" /> -->
         <title>Réservia voyage</title>
         <script src="https://kit.fontawesome.com/6b523981c6.js" crossorigin="anonymous"></script>
     </head> 
@@ -14,20 +15,18 @@
             <div id="logo_titre-principale">
                 <img src="images/logo/Reservia.png" alt="logo" />
             </div>
-                <nav id="conteneur-nav" > 
-                        <li class="element ">Hébergements</li>
-                        <li class="element">Activités</li>
-                        <li class="element">S'inscrire</li>
+                <nav id="conteneur-nav" >   
+                    <div class="element heber">Hébergements</div>
+                    <div class="element activites">Activités</div>
+                    <div class="element sinscrire">S'inscrire</div>
                 </nav>
-                
-                
         </header>
         <section class="geolocalisation-et-filtres">
-            <h3> <strong >Trouvez votre hébergement pour des vacances de rêve</strong></h3>
+            <h3 class="bold">Trouvez votre hébergement pour des vacances de rêve</strong></h3>
                 <p>En plein centre ville ou en pleine nature</p>
-                    <div>
-                        <p><i class="icon-black fas fa-map-marker-alt"></i> Marseille, France </P>
-                        <p><a> Rechercher</a></p>
+                    <div class="geolocalisation-et-filtres__geo-recherche">
+                        <p><i class="icon-black fas fa-map-marker-alt"></i> Marseille, France </p>
+                        <p><a>Rechercher</a></p>
                     </div>
 
                 <nav class="block-filtres">
@@ -47,63 +46,89 @@
         <section >
             <!--<section class="carte-de-présentation-d-un-logement"> -->
     
-        <div class="présentation-hébergement-populaire carte-de-présentation-hébergement-à-marseille">
-            <div id="titre-section-hébergement-marseille"></div>
-                <h2>Hébergement à Marseille</h2>
-                
-            
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aga" /></p>
-                    <p>Auberge de la Cannebière</p>
-                    <p>Nuit à partir de 25€</p>
-            </div>
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="aga2"/></p>
-                <p>Hôtel du port</p>
-                <p>Nuit à partir de 52€</p>
-            </div>
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" /></p>
-                    <p>Hôtel les mouettes</p>
-                    <p>Nuit à partir de 76€</p>
-            </div>
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" /></p>
-                    <p>Hôtel de la mer</p>
-                    <p>Nuit à partir de 46€</p>
-            </div>
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" /></p>
-                    <p>Auberge Le Panier</p>
-                    <p>Nuit à partir de 23 €</p>
-            </div>
-            <div class="hébergement-img">
-                <p><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" /></p>
-                <p> Hôtel chez Amina</p>
-                <p>Nuit à partir de 96€</p>
-            </div>
-            
-        </div>   
+            <div class=" carte-de-présentation-hébergement-à-marseille présentation-hébergement-populaire">
+                <h2 class="title-on-top">Hébergement à Marseille</h2>
+                    <div class="hébergement-img">
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aga" /></p>
+                        <div class="hébergement-img__description-chambre">
+                            <p class="bold">Auberge de la Cannebière</p>
+                            <p>Nuit à partir de 25€</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                    </div>
+                    </div>
+                    <div class="hébergement-img">
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="aga2"/></p>
+                        <div class="hébergement-img__description-chambre">
+                            <p class="bold">Hôtel du port</p>
+                            <p >Nuit à partir de 52€</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class=" fas fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="hébergement-img">
+                        
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" /></p>
+                        <div class="hébergement-img__description-chambre">  
+                            <p class="bold">Hôtel les mouettes</p>
+                            <p>Nuit à partir de 76€</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="hébergement-img">
+                        
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" /></p>
+                        <div class="hébergement-img__description-chambre"> 
+                            <p class="bold">Hôtel de la mer</p>
+                            <p>Nuit à partir de 46€</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="icon-gray fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="hébergement-img"> 
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" /></p>
+                        <div class="hébergement-img__description-chambre">
+                           <p class="bold">Auberge Le Panier</p>
+                           <p>Nuit à partir de 23 €</p>
+                           <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="hébergement-img">      
+                        <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" /></p>
+                        <div class="hébergement-img__description-chambre"> 
+                            <p class="bold"> Hôtel chez Amina</p>
+                            <p>Nuit à partir de 96€</p>
+                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class=" fas fa-star"></i></p>
+                        </div>  
+                    </div>
+                <p class="at-the-bottom">afficher plus</p>            
+            </div>   
         </section>
         <aside>
-        <div class="présentation-hébergement-populaire carte-de-présentation-les-plus-populaires">
-            <h2>Les plus populaires</h2>
-            <div class="les-plus-populaires-img">
-                <p><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" /></p>
-                <p>Hôtel Le soleil du matin</p>
-                <p>Nuit à partir de 128€</p>
+            <div class="carte-de-présentation-les-plus-populaires présentation-hébergement-populaire">
+                <h2 class="title-on-top">Les plus populaires</h2>
+                    <div class="les-plus-populaires-img">
+                        
+                        <p class="float-img-populaires"><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" /></p>
+                        <!-- <div class="margin-left-img-populaire"> -->
+                        <p class="bold titre-img">Hôtel Le soleil du matin</p>
+                        <p>Nuit à partir de 128€</p>
+                        <br /><br/><br />
+                        <p ><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class=" fas fa-star"></i></p>
+                        <!-- </div> -->
+                    </div>
+                    <div class=" les-plus-populaires-img">
+                        <p class="float-img-populaires"><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" /></p>
+                        <p class="bold">Au coeur de l'eau Chambres d'hôtes</p>
+                        <p>Nuit à partir de 71€</p>
+                        <br /><br/><br />
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                    </div>
+                    <div class="les-plus-populaires-img">
+                        <p class="float-img-populaires"><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" /></p>
+                        <p class="bold">Hôtel Tout bleu et Blanc</p>
+                        <p>Nuit à partir de 68€</p>
+                        <br /><br/><br />
+                        <p ><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
+                    </div>
             </div>
-            <div class="les-plus-populaires-img">
-                <p><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" /></p>
-                <p>Au coeur de l'eau Chambres d'hôtes</p>
-                <p>Nuit à partir de 71€</p>
-            </div>
-            <div class="les-plus-populaires-img">
-                <p><img class="les-plus-populaires-img__dimension-image" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" /></p>
-                <p>Hôtel Tout bleu et Blanc</p>
-                <p>Nuit à partir de 68€</p>
-            </div>
-        </div>
         </aside>
     </div>
         <section>
