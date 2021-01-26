@@ -12,34 +12,37 @@
     <body>   
         <header>
                 
-            <div id="logo_titre-principale">
+            <div id="logo-titre-principale">
                 <img src="images/logo/Reservia.png" alt="logo" />
+                <a class="logo-titre-principale__only-responsive">S'inscrire </a>
             </div>
                 <nav id="conteneur-nav" >   
-                    <div class="element heber">Hébergements</div>
-                    <div class="element activites">Activités</div>
-                    <div class="element sinscrire">S'inscrire</div>
+                    <a class="element heber">Hébergements</a>
+                    <a class="element activites">Activités</a>
+                    <a class="element sinscrire">S'inscrire</a>
                 </nav>
         </header>
-        <section class="geolocalisation-et-filtres">
+        <section class="mini-section">
             <h3 class="bold">Trouvez votre hébergement pour des vacances de rêve</strong></h3>
                 <p>En plein centre ville ou en pleine nature</p>
-                    <div class="geolocalisation-et-filtres__geo-recherche">
-                        <p><i class="icon-black fas fa-map-marker-alt"></i> Marseille, France </p>
-                        <p><a>Rechercher</a></p>
+                    <div class="mini-section__geolocalisation-recherche">
+                        <p class="mini-section__icone-geolocalisation"><i class="icon-black fas fa-map-marker-alt"></i></p>
+                        <p class="mini-section__ville"> Marseille, France </p>
+                        <p class="mini-section__rechecher"><a>Rechercher</a></p>
+                        <p class="search"><i class="icon-white fas fa-search"></i></p>
                     </div>
 
                 <nav class="block-filtres">
                 
-                    <p class="filtres">filtres</p>
-                    <p class="filtres"><i class="fas fa-money-bill-wave"></i>économique</p>
-                    <p class="filtres"><i class="fas fa-child"></i>familial</p>
-                    <p class="filtres"><i class="fas fa-heart"></i>romantique</p>
-                    <p class="filtres"><i class="fas fa-dog"></i>animaux autorisés</p>             
+                    <p class="  block-filtre__filtres__lien filtres-main">Filtres</p>
+                    <p class="  block-filtre__filtres__lien"><i class="circle fas fa-money-bill-wave"></i>économique</p>
+                    <p class="  block-filtre__filtres__lien"><i class="circle fas fa-child"></i>familial</p>
+                    <p class="  block-filtre__filtres__lien"><i class="circle fas fa-heart"></i>romantique</p>
+                    <p class="  block-filtre__filtres__lien"><i class="circle fas fa-dog"></i>animaux autorisés</p>             
                 </nav> 
             
                 <div id=logo_information>
-                    <i class="fas fa-info"></i>plus de 500 logements sont disponibles dans cette ville
+                    <p class="logo-information__padding"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
         </section>    
     <div class="container-section_hébergement-et-aside_les-plus-populaires">
@@ -131,26 +134,33 @@
             </div>
         </aside>
     </div>
-        <section>
+        <section class="activites">
             <h2> Activités à Marseille</h2>
-            <!-- à repmlir -->
+                <div class="activites__container">
+                    <p class="activites__container__cadre-img"><img class="vertical" src="images/activites/4_small/vieux-port.jpg" />Vieux Port</p>
+                    <p class="activites__container__cadre-img"><img class="horizontal" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" />Fort de Pomègues</p>
+                    <p class="activites__container__cadre-img"><img class="horizontal" src="images/activites/4_small/iles du frioul.jpg" />Îles du Frioul</p>
+                    <p class="activites__container__cadre-img"><img class="vertical" src="images/activites/4_small/recep ivedik.jpg">Parc National des Calanques</p>
+                    <p class="activites__container__cadre-img"><img class="horizontal" src="images/activites/4_small/bitcoin.jpg">Notre-Dame-de-la-Garde</p>
+                    <p class="activites__container__cadre-img"><img class="vertical" src="images/activites/4_small/naomi.jpg">Parc Longchamp</p>
+                </div>
         </section>
-            <footer>
-            <div id=container>
-                <ul class=items> 
+        <footer>
+            <div id="container">
+                <ul class="container__items"> 
                     <!-- <h3><strong>A propos</h3></strong> -->
                     <li class="items__list">A propos</li>
                     <li class="items__list">fontionnement du site</li>
                     <li class="items__list">Conditions générales de vente</li>
                     <li class="items__list">Données et confidentialité</li>
                 </ul>
-                <ul class=items> 
+                <ul class="container__items"> 
                     <!-- <h3><strong> Nos hébergements</strong></h3> -->
                     <li class="items__list">Nos hébergements</li>
                     <li class="items__list">Charte qualité</li>
                     <li class="items__list">Soumettre votre hôtel</li>
                 </ul>
-                <ul class=items>
+                <ul class="container__items">
                     <!-- <h3><strong>Assistance</strong></h3> -->
                     <li class="items__list"> Assistance</li>
                     <li class="items__list">Centre d'aide</li>
@@ -158,6 +168,6 @@
                 </ul>
             </div>
 
-            </footer>
+        </footer>
     </body>
 </html>

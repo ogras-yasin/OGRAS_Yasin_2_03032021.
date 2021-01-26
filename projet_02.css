@@ -10,18 +10,17 @@ header
 {
 	display:flex;
 	justify-content: space-between;
+	flex-direction: row;
 }
 
-#logo_titre-principale
+#logo-titre-principale
 {
-	/* comment separer sinscrire de hebergement? */
-	flex-direction: row;
-	color: blue
+	display: flex;
 } 
 
 header img 
 {
-	border: 5px solid darkmagenta;
+	/* border: 5px solid darkmagenta; */
 	width: 160px;
 	height: 70px;
 }
@@ -30,26 +29,26 @@ header img
 {
 	
 	display:flex;
-	flex: flex-end;
+	/* flex: flex-end; */
 	flex-direction:row; 
 	flex-wrap: wrap;
 	justify-content: space-around;
+	text-align: center;
 	/* border: 6px dotted yellowgreen; */
 	/* margin-bottom: 40px; */
 
 }
-/* TENTATIVE de separer item sincrire de hebergement */
-.element
-{
-	
-	margin-left: 20px;
-	margin-right: 20px;
-	list-style-type: none;
-	padding-top: 40px;
 
+.logo-titre-principale__only-responsive{
+	display: none;
+	/* visibility: hidden; */
+}
+.element
+{	
+	list-style-type: none;
+	padding: 40px 20px 0px;
 }
 
-/* .element:nth-child(1) */
 .heber
 {
 	/* hebergements */
@@ -75,16 +74,102 @@ header img
 
 /* petite section */
 
-.geolocalisation-et-filtres__geo-recherche {
+.mini-section__geolocalisation-recherche {
 	display: flex;
+}
+.mini-section__icone-geolocalisation{
+	background-color: #F2F2F2;
+	margin: 10px 0px;
+	padding: 5px 10px;
+	border-radius: 10px 0 0 10px;
+	border: #F2F2F2 8px solid;
+	
+}
+.mini-section__ville{
+	margin: 10px 0px;
+	padding: 5px 20px;
+	/* background-color: #F2F2F2; */
+	border-top: 2px #F2F2F2 solid;
+	border-bottom: 2px #F2F2F2 solid;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+/* appliquer rechercher que pour le desktop */
+.mini-section__rechecher{
+	margin: 10px 0px;
+	padding: 5px 20px;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 0px 10px 10px 0;
+	line-height: 33px;
+	font-weight: bold;
+	
+}
+
+/* appliquer search que pour le responsive */
+.search{
+	margin: 10px 0px;
+	padding: 5px 10px;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	border: #0065FC 8px solid;
+	/* visibility: hidden; */
+	display: none;
+	
+} 
+
+/* filtres */
+/* block-filtre */
+.circle{
+	background-color: #DEEBFF;
+	margin: 0px 12px 0 0;
+	padding: 16px 16px;
+	border-radius: 50px;
+}
+.block-filtre__filtres__lien{
+	margin: 0px 10px 10px 10px;
+	padding: 0px 20px 0 0;
+	border-radius: 70px 80px  80px 70px;
+	/* text-align: center; */
+	font-weight: bold;
+	border-top: 4px #f2f2f2 solid;
+	border-bottom: 4px #F2F2F2 solid;
+	border-right: 4px  #f2f2f2 solid;
+	
+	display: flex;
+	align-items: center;
+} 
+
+.filtres-main{
+	font-weight: bold;
+	border: none;
+}
+
+.block-filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* margin-bottom: 10px; */
+	/* padding-bottom: 100px; */
+	/* border: firebrick solid 3px */
+
+}
+/* end block-filtres */
+.fa-info{
+	border: 3px solid #F2F2F2;
+	padding: 9px;
+	border-radius: 360%;
+}
+.logo-information__padding{
+	/* padding: 0px 20px 0 20px; */
+	margin-left: 10px;
 }
 
 
-
-
-
-
-
+/* fin filtres */
 
 .container-section_hébergement-et-aside_les-plus-populaires
 {
@@ -133,7 +218,6 @@ header img
 /* peut être nommer "child" ? */
 {
 	/* border: gold dotted 7px; */
-	/* flex-wrap: wrap; */
 	border-radius: 23px;
 	background-color: white;
 	padding: 1px 7px;
@@ -162,7 +246,6 @@ header img
 	margin:  20px 0px 20px 0;
 }
 aside .les-plus-populaires-img
-/* peut être nommer child aussi */
 {
 	/* border: sienna 5px dashed; */
 	border-radius: 23px;
@@ -195,10 +278,6 @@ aside .les-plus-populaires-img__dimension-image
 	
 
 }
-/* .clear
-{
-	clear: both;
-} */
 
 /* si je met "i.fas" ca annule toutes les autres
 règles comme 5 étoiles bleu par tout 
@@ -209,31 +288,43 @@ et geolocalisation en bleu */
 	/* border: turquoise solid 3px; */
 }
 
-section .filtres
-{	
-	padding-right: 80px;
-}
-
 
 
 /* couleur des icon */
  .icon-black  
- {color : black;}
+{
+	color : black;
+	background-color: #F2F2F2;
+}
 .icon-gray
 {color: #F2F2F2;}
+.icon-white
+{color: white;}
 
-/* ---- second nav --- */
-.block-filtres
-{
+/* Activites */
+.activites{
 	display: flex;
-	flex-direction: row;
-	border: firebrick solid 3px
+	flex-wrap: wrap;
+}
+.activites__container{
+
+}
+.activites h2{
+	color: teal;
+	width: 100%;
 
 }
 
-#logo_geolocalisation
-{
-	display: flex;
+.vertical{
+	/* max-width: 100%;
+	height: auto; */
+	/* max-height: 100%;
+	width: 100%; */
+	 height: 400px;
+	width: 250px; 
+	/* width: 100%; */
+  	/* padding-bottom: 75%; */
+	  background: gold; 
 }
 
 
@@ -243,6 +334,8 @@ section .filtres
 
 
 
+/* fin Activites */
+/* footer */
 footer
 {
 	background-color: #F2F2F2;
@@ -253,10 +346,13 @@ footer #container
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space around;
+	margin: 40px 0;
+	padding: 25px 0;
 	color: black;
 }
 
-footer .items
+footer .container__items
 {
 
 	margin-right: 100px;
@@ -265,7 +361,7 @@ footer .items
 
 .at-the-bottom
 {
-	/* width: 100%; */
+	
 	font-weight:bold ;
 	text-transform: capitalize; 
 	margin: 12px 0 12px 12px;
@@ -280,17 +376,26 @@ footer .items
 	margin-bottom: 27px;
 }
 
-/* .margin-left-img-populaire
-{
-	padding-left: 16px;
-} */
+/* fin footer */
+
 
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
 @media all and (max-width: 800px)
 /* @media all and (max-width: 1024 px) par défault*/
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 {
-	
+	/* mini section */
+	.filtres-main{
+		width: 100%;
+	}
+
+	.mini-section__rechecher{
+		display: none;
+	}
+	.search{
+		/* visibility:unset */
+		display:unset;
+	}
 /* mettre en column aside d'abord puis section */
 .carte-de-présentation-les-plus-populaires {
 	border-radius: unset;
@@ -299,6 +404,7 @@ footer .items
 	background-color: white;
 }
 
+
 .container-section_hébergement-et-aside_les-plus-populaires
 {
 	display: flex;
@@ -306,68 +412,66 @@ footer .items
 	justify-content: flex-end;
 }
 
-	/* .heber */
-	div.element:nth-child(1)
+
+/* header responsive */
+
+	header{
+		display: unset;
+	}
+
+
+	/* .heber */ 
+	a.element:nth-child(1)
 	{
 		border-top:unset ;
 		
 		padding-bottom: 40px;
 		border-bottom: #0065FC 3px solid;
+		width: 50%;
+		/* margin: 0; */
+		/* padding: 0; */
+		padding-left: unset;
+		padding-right:unset;
+		padding-bottom: 20px;
 		/* box-shadow: 0px 04px 65px  */
 	}
 	/* .activites */
-	div.element:nth-child(2)
+	a.element:nth-child(2)
 	{
 		/* background-color: tomato; */
 		padding-bottom: 40px;
 		border-bottom: #F2F2F2 3px solid;
+		width: 50%;
+		/* margin: 0; */
+		padding-left: unset;
+		padding-right: unset;
+		padding-bottom: 20px;
 	}
-	div.element:nth-child(3)
+	/* du coup le dernier child sert seulement a cacher */
+	a.element:nth-child(3)
 	{
-		order:-1
+		/* order:-1; */
+		display:none;
 	}
 
-	/* .element:nth-child(3)
-	{
-		order: 1;
-	} */
-
-	/* header */
-	/* ca permet de mettre en flex le logo et la liste */
-	/* {
-		display:;
-		justify-content: space-between;
-		
-	} */
-	
-	/* header
-	{
-		display: flex;
-		flex: none;
-	} */
-
-	
-/* 	
-	.element:nth-child(1)
-	{
-		color:#0065FC;
-		border-top:4px solid darkorchid;
-		order: 1;
-	
-	}
-	
-	.element:nth-child(2)
-	{
-		color:black;
-		order: 2;
-	}
-	.element:nth-child(3)
-	{
-		color:#0065FC;
+	a.logo-titre-principale__only-responsive{
+		display: unset;
+		color:  #0065FC;
+		align-items: center;
 		font-weight: bold;
-		order: 3;
-	} */
+		
+		
+	}
+	#logo-titre-principale{
+		display: flex;
+		/* justify-content: flex-end; */
+		align-self: flex-end;
+		justify-content: space-between;
+		align-items: center;
+	}
 
+
+/* fin header responsive*/
 
 
 
