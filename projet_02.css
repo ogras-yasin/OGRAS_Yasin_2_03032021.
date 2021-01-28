@@ -29,13 +29,11 @@ header img
 {
 	
 	display:flex;
-	/* flex: flex-end; */
 	flex-direction:row; 
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
 	/* border: 6px dotted yellowgreen; */
-	/* margin-bottom: 40px; */
 
 }
 
@@ -49,7 +47,7 @@ header img
 	padding: 40px 20px 0px;
 }
 
-.heber
+.conteneur-nav__heber
 {
 	/* hebergements */
 	color:#0065FC;
@@ -302,32 +300,87 @@ et geolocalisation en bleu */
 {color: white;}
 
 /* Activites */
-.activites{
+
+.activites__container{
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 10px;
+	padding: 0 10px;
 }
-.activites__container{
+.activites h2{width: 100%;}
 
-}
-.activites h2{
-	color: teal;
-	width: 100%;
-
-}
 
 .vertical{
-	/* max-width: 100%;
-	height: auto; */
-	/* max-height: 100%;
-	width: 100%; */
+	
 	 height: 400px;
-	width: 250px; 
-	/* width: 100%; */
-  	/* padding-bottom: 75%; */
-	  background: gold; 
+	width: 300px; 
+	
+	  background-image: url("images/activites/4_small/vieux-port.jpg"); 
+	  background-position: center;
+	  /* background-size: cover; */
+	  /* background-repeat: no-repeat; */
+	  border: lightsteelblue 4px solid;
 }
 
 
+.activites__container__horizontal-mini{
+	/* la somme doit etre egal a verticale + ou - */
+	height: 160px;
+	width: 300px;
+	background-image: url("images/activites/4_small/iles-du-frioul.jpg");
+	background-position: center;
+}
+
+/* cadre de toutes les elements pour modifier leur contour et ombre */
+.activites__container__cadre-img
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 10PX;
+	/* border: teal 7px solid; */
+
+}
+/* on essaye les vh et vw */
+.aga{
+	/* border: peru 10px dashed; */
+	border-radius: 23px;
+	background-color: white;
+	/* padding: 10px 7px; */
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-shadow: black 0 0 10px -4px;
+	/* la hauteur et la largeur est très bien */
+
+	/* height: 200px;
+	width: 300px; */
+	height: 200px;
+	width: 33vw;
+	max-width: 300px;
+	/* background-size: cover; */
+	background-position: center;
+}
+/* met la police en em */
+
+.activites__container__cadre-img__horizontal-big {
+	height: 200px;
+	min-height: 100px;
+	background-size: cover;
+	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+	background-position: center;
+	/* border: darkorchid 4px solid; */
+	background-repeat: no-repeat;
+	border-radius: 23px 23px 0 0;
+
+}
+
+.activites__container__description-texte{
+	/* border: darkred 5px solid; */
+	margin: 0 10px  ;
+	/* text-align: center; */
+	line-height: 3rem;
+	font-weight: bold;
+
+}
 
 
 
@@ -356,7 +409,7 @@ footer .container__items
 {
 
 	margin-right: 100px;
-	margin-left: 
+	/* margin-left:  */
 }
 
 .at-the-bottom
@@ -378,6 +431,7 @@ footer .container__items
 
 /* fin footer */
 
+* {box-sizing: border-box;}
 
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
 @media all and (max-width: 800px)
