@@ -17,8 +17,8 @@
                 <a class="logo-titre-principale__only-responsive">S'inscrire </a>
             </div>
                 <nav id="conteneur-nav" >   
-                    <a class="element conteneur-nav__heber">Hébergements</a>
-                    <a class="element conteneur-nav__activites">Activités</a>
+                    <a href="#hebergement" class="element conteneur-nav__heber">Hébergements</a>
+                    <a href="#activites" class="element conteneur-nav__activites">Activités</a>
                     <a class="element conteneur-nav__sinscrire">S'inscrire</a>
                 </nav>
         </header>
@@ -27,7 +27,10 @@
                 <p>En plein centre ville ou en pleine nature</p>
                     <div class="mini-section__geolocalisation-recherche">
                         <p class="mini-section__icone-geolocalisation"><i class="icon-black fas fa-map-marker-alt"></i></p>
-                        <p class="mini-section__ville"> Marseille, France </p>
+                            <div class="mini-section__ville">                         
+                            <form method="POST" action="traitement.javascript"><input type="text" name="ville" id="ville" value="Marseille, France">
+                            </form>
+                            </div>
                         <p class="mini-section__rechecher"><a>Rechercher</a></p>
                         <p class="search"><i class="icon-white fas fa-search"></i></p>
                     </div>
@@ -50,24 +53,24 @@
             <!--<section class="carte-de-présentation-d-un-logement"> -->
     
             <div class=" carte-de-présentation-hébergement-à-marseille présentation-hébergement-populaire">
-                <h2 class="title-on-top">Hébergement à Marseille</h2>
-                    <div class="hébergement-img">
+                <h2 id="hebergement" class="title-on-top">Hébergements à Marseille</h2>
+                    <a href="#" class="hébergement-img">
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aga" /></p>
                         <div class="hébergement-img__description-chambre">
                             <p class="bold">Auberge de la Cannebière</p>
                             <p>Nuit à partir de 25€</p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
-                    </div>
-                    </div>
-                    <div class="hébergement-img">
+                        </div>
+                    </a>
+                    <a href="#" class="hébergement-img">
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="aga2"/></p>
                         <div class="hébergement-img__description-chambre">
                             <p class="bold">Hôtel du port</p>
                             <p >Nuit à partir de 52€</p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class=" fas fa-star"></i></p>
                         </div>
-                    </div>
-                    <div class="hébergement-img">
+                    </a>
+                    <a href="#" class="hébergement-img">
                         
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" /></p>
                         <div class="hébergement-img__description-chambre">  
@@ -75,8 +78,8 @@
                             <p>Nuit à partir de 76€</p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
                         </div>
-                    </div>
-                    <div class="hébergement-img">
+                    </a>
+                    <a href="#" class="hébergement-img">
                         
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" /></p>
                         <div class="hébergement-img__description-chambre"> 
@@ -84,23 +87,23 @@
                             <p>Nuit à partir de 46€</p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="icon-gray fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
                         </div>
-                    </div>
-                    <div class="hébergement-img"> 
+                    </a>
+                    <a href="#" class="hébergement-img"> 
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" /></p>
                         <div class="hébergement-img__description-chambre">
                            <p class="bold">Auberge Le Panier</p>
                            <p>Nuit à partir de 23 €</p>
                            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class="icon-gray fas fa-star"></i></p>
                         </div>
-                    </div>
-                    <div class="hébergement-img">      
+                    </a> 
+                    <a href="#" class="hébergement-img">      
                         <p class="hébergement-img-float"><img class="hébergement-à-marseille--dimension-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" /></p>
                         <div class="hébergement-img__description-chambre"> 
                             <p class="bold"> Hôtel chez Amina</p>
                             <p>Nuit à partir de 96€</p>
                             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class=" fas fa-star"></i><i class=" fas fa-star"></i></p>
                         </div>  
-                    </div>
+                    </a>
                 <p class="at-the-bottom">afficher plus</p>            
             </div>   
         </section>
@@ -134,21 +137,21 @@
             </div>
         </aside>
     </div>
-        <section class="activites">
+        <section id="activites" class="activites">
             <h2> Activités à Marseille</h2>
                 <!-- <div class="activites__container"> -->
                     <!-- <p class="activites__container__cadre-img"><img class="vertical" src="images/activites/4_small/vieux-port.jpg" />Vieux Port</p> -->
-                    <div class="activites__cadre-1"><!-- image --><div class="activites__cadre__img-1"></div><!--fin image --><p class="activites__cadre__description ">Vieux Port</p></div>
+                    <a href="#" class="activites__cadre-1 activites__cadre"><!-- image --><div class="activites__cadre__img-1"></div><!--fin image --><p class="activites__cadre__description ">Vieux Port</p></a>
                     
                     <!-- <p class="activites__container__cadre-img"><img class="horizontal" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" />Fort de Pomègues</p> -->
                     <div class="deuxieme-colonne">
-                        <div class="activites__cadre-2"><!-- image --><div class="activites__cadre__img-2 "></div><!-- fin_image --><p class="activites__cadre__description">Fort de Pomègues</p></div>
-                        <div class="activites__cadre-3 "><div class="activites__cadre__img-3"></div><p class="activites__cadre__description ">Îles du Frioul</p></div>
+                        <a href="#" class="activites__cadre-2 activites__cadre"><!-- image --><div class="activites__cadre__img-2 "></div><!-- fin_image --><p class="activites__cadre__description">Fort de Pomègues</p></a>
+                        <a href="#" class="activites__cadre-3 activites__cadre "><div class="activites__cadre__img-3"></div><p class="activites__cadre__description ">Îles du Frioul</p></a>
                     </div>
-                    <div class="activites__cadre-4 "><div class="activites__cadre__img-4"></div><p class="activites__cadre__description">Parc National des Calanques</p></div>
+                    <a href="#" class="activites__cadre-4 activites__cadre "><div class="activites__cadre__img-4"></div><p class="activites__cadre__description">Parc National des Calanques</p></a>
                     <div class="quatrieme-colonne">
-                        <div class="activites__cadre-5 "><div class="activites__cadre__img-5"></div><p class="activites__cadre__description">Notre-Dame-de-la-Garde</p></div>
-                        <div class="activites__cadre-6 "><div class="activites__cadre__img-6"></div><p class="activites__cadre__description">Parc Longchamp</p></div>
+                        <a href="#" class="activites__cadre-5 activites__cadre "><div class="activites__cadre__img-5"></div><p class="activites__cadre__description">Notre-Dame-de-la-Garde</p></a>
+                        <a href="#" class="activites__cadre-6 activites__cadre "><div class="activites__cadre__img-6"></div><p class="activites__cadre__description">Parc Longchamp</p></a>
                     </div>
                 <!-- </div> -->
         </section>

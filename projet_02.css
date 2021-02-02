@@ -45,6 +45,7 @@ header img
 {	
 	list-style-type: none;
 	padding: 40px 20px 0px;
+	text-decoration:none;
 }
 
 .conteneur-nav__heber
@@ -86,13 +87,28 @@ header img
 .mini-section__ville{
 	margin: 10px 0px;
 	padding: 5px 20px;
-	/* background-color: #F2F2F2; */
 	border-top: 2px #F2F2F2 solid;
 	border-bottom: 2px #F2F2F2 solid;
-	line-height: 30px;
 	font-weight: bold;
 }
+a{
+	text-decoration: none;
+	color: black;
+}
 
+/* input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+} */
+input {
+	outline:none;
+	border-style: none;
+	font-size: 1.01em;
+	font-weight: bold;
+	line-height: 30px;
+   }
 /* appliquer rechercher que pour le desktop */
 .mini-section__rechecher{
 	margin: 10px 0px;
@@ -120,6 +136,7 @@ header img
 
 /* filtres */
 /* block-filtre */
+
 .circle{
 	background-color: #DEEBFF;
 	margin: 0px 12px 0 0;
@@ -130,7 +147,7 @@ header img
 	margin: 0px 10px 10px 10px;
 	padding: 0px 20px 0 0;
 	border-radius: 70px 80px  80px 70px;
-	/* text-align: center; */
+	
 	font-weight: bold;
 	border-top: 4px #f2f2f2 solid;
 	border-bottom: 4px #F2F2F2 solid;
@@ -139,6 +156,18 @@ header img
 	display: flex;
 	align-items: center;
 } 
+
+.block-filtre__filtres__lien:hover{
+	border: #0065FC solid 3px;
+	transform: scale(1.1);
+	background-color: #F2F2F2;
+	color: #0065FC;
+}
+.block-filtre__filtres__lien:hover:nth-child(1){
+	border: none;
+	transform: none;
+	
+}
 
 .filtres-main{
 	font-weight: bold;
@@ -150,10 +179,6 @@ header img
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/* margin-bottom: 10px; */
-	/* padding-bottom: 100px; */
-	/* border: firebrick solid 3px */
-
 }
 /* end block-filtres */
 .fa-info{
@@ -228,11 +253,7 @@ header img
 .présentation-hébergement-populaire
 {
 	/* color: darkorchid; */
-	padding: 40px 20px  ;
-	/* margin:  20px 12px 20px 0; 
-	bu cok guzzel ama bilgisarim bu olculeri alinca
-	ecrana column'mus gibi gosteriyor */
-	/* margin: 12px 12px 0 0; */
+	padding: 40px 20px;
 	border-radius: 45px;
 }
 
@@ -262,9 +283,7 @@ aside .les-plus-populaires-img
 .float-img-populaires
 {
 	float: left;
-	/* width: 800px; ne prend pas en compte car p je pense */
 	margin: 7px 15px 7px 7px;
-
 }
 aside .les-plus-populaires-img__dimension-image
 {
@@ -272,9 +291,6 @@ aside .les-plus-populaires-img__dimension-image
 	height: 200px;
 	width: 200px;
 	border-radius: 23px 0 0 23px;
-	
-	
-
 }
 
 /* si je met "i.fas" ca annule toutes les autres
@@ -283,7 +299,19 @@ et geolocalisation en bleu */
  .fas
 {
 	color:#0065FC;
+
 	/* border: turquoise solid 3px; */
+}
+/* .fa-child{
+	transform: translate(50px, 50px);
+} */
+
+/* centrage des logos icones */
+.fa-child:before{
+	margin: 0 1.6px;
+}
+.fa-info:before {
+	margin: 5px;
 }
 
 
@@ -312,20 +340,19 @@ et geolocalisation en bleu */
 
 .activites__cadre-1{
 	border-radius: 23px ;
-	/* border: hotpink 4px solid; */
 	box-shadow: black 0 0 10px -4px;
-	margin: 20px 20px 20px 0;
+	margin: 20px 20px 40px 0px;
+
+	/* j'ai pas réussi a enlever la règle de
+	 margin left unset ou 0 */
 }
 
 .activites__cadre__img-1{
 	
-	height: 400px;
-	/* width: 300px;  */
-	/* min-width: 300px;
-	max-width: 42vw; */
+	height: 468px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	border-radius: 23px  23px 0 0;
 	  background-image: url("images/activites/4_small/vieux-port.jpg"); 
 	  background-position: center;
@@ -335,6 +362,10 @@ et geolocalisation en bleu */
 
 /* on essaye les vh et vw */
 /* .aga */
+
+/* .activites__cadre{
+	margin: 20px 20px 40px 20px;
+} */
 
 
 .deuxieme colonne{
@@ -348,16 +379,14 @@ et geolocalisation en bleu */
 	border-radius: 23px;
 	box-shadow: black 0 0 10px -4px;
 	background-position: center;
-	margin:20px;
+	margin: 20px 20px 40px 20px;
 
 }
 .activites__cadre__img-2 {
-	height: 200px;
-	/* min-height: 100px;
-	width: 300px; */
+	height: 240px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	background-size: cover;
 	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 	background-position: center;
@@ -370,20 +399,15 @@ et geolocalisation en bleu */
 .activites__cadre-3 {
 	border-radius: 23px;
 	box-shadow: black 0 0 10px -4px;
-	margin: 20px;
-	
+	margin: 20px 20px 40px 20px;
 
 }
 
 .activites__cadre__img-3 {
-	height: 160px;
-	 /* width:300px; */
-	
-	/* min-width: 20vw; 
-	max-width: 42vw; */
+	height: 140px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	
 
 
@@ -397,16 +421,16 @@ et geolocalisation en bleu */
 .activites__cadre-4 {
 	border-radius: 23px;
 	box-shadow: black 0 0 10px -4px;
-	margin: 20px;
+	margin: 20px 20px 40px 0px;
 	
 
 }
 
 .activites__cadre__img-4 {
-	height: 400px;
+	height: 468px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	
 	border-radius: 23px  23px 0 0;
 	background-image: url("images/activites/4_small/bitcoin.jpg");
@@ -424,16 +448,16 @@ et geolocalisation en bleu */
 .activites__cadre-5 {
 	border-radius: 23px;
 	box-shadow: black 0 0 10px -4px;
-	margin: 20px;
+	margin: 20px 20px 40px 20px;
 	
 
 }
 
 .activites__cadre__img-5 {
-	height: 160px;
+	height: 190px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	
 	border-radius: 23px  23px 0 0;
 	background-image: url("images/activites/4_small/recep-ivedik.jpg");
@@ -445,16 +469,17 @@ et geolocalisation en bleu */
 .activites__cadre-6 {
 	border-radius: 23px;
 	box-shadow: black 0 0 10px -4px;
-	margin: 20px;
+	margin: 20px 20px 40px 20px;
+	height: 230px;
 	
 
 }
 
 .activites__cadre__img-6 {
-	height: 160px;
+	height: 190px;
 	width: 18vw;
-	min-width: 260px ;
-	max-width: 400px;
+	min-width: 330px ;
+	max-width: 450px;
 	
 	border-radius: 23px  23px 0 0;
 	background-image: url("images/activites/4_small/naomi.jpg");
@@ -472,7 +497,12 @@ et geolocalisation en bleu */
 
 }
 
-
+/* .quatrieme-colonne{
+	display:inline-block;
+} */
+/* a{
+	display: inline;
+} */
 
 
 
@@ -489,17 +519,20 @@ footer #container
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space around;
+	justify-content:space-between;
 	margin: 40px 0;
-	padding: 25px 0;
+	padding: 25px ;
 	color: black;
+
 }
+/* .items__list{
+
+} */
 
 footer .container__items
 {
-
-	margin-right: 100px;
-	/* margin-left:  */
+	padding-left: 0;
+	
 }
 
 .at-the-bottom
@@ -528,7 +561,7 @@ footer .container__items
 
 
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
-@media all and (max-width: 550px)
+@media all and (max-width: 650px)
 /* @media all and (max-width: 1024 px) par défault*/
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 {
@@ -617,6 +650,30 @@ footer .container__items
 		justify-content: space-between;
 		align-items: center;
 	}
+
+/* activites responsive */
+
+/* .activites__cadre {
+
+width: 80vw;
+height: 68px; 
+} */
+
+.activites__cadre__img-1, .activites__cadre__img-2,
+.activites__cadre__img-3, .activites__cadre__img-4,
+.activites__cadre__img-5, .activites__cadre__img-6 {
+	width: 90vw;
+	height: 195px; 
+	margin-left: 1px;
+}
+.activites__cadre{
+	margin-left: 4px;
+
+}
+
+.quatrieme-colonne{
+	display: unset;
+}
 
 
 /* fin header responsive*/
