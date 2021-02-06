@@ -39,7 +39,6 @@ header img
 
 .logo-titre-principale__only-responsive{
 	display: none;
-	/* visibility: hidden; */
 }
 .element
 {	
@@ -114,22 +113,21 @@ input {
 	margin: 10px 0px;
 	padding: 5px 20px;
 	background-color: #0065FC;
-	color: white;
 	border-radius: 0px 10px 10px 0;
 	line-height: 33px;
 	font-weight: bold;
-	
 }
-
+.rechercher-color{color: white;}
 /* appliquer search que pour le responsive */
 .search{
+	position: relative;
+	right: 20px;
 	margin: 10px 0px;
 	padding: 5px 10px;
 	background-color: #0065FC;
 	color: white;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 17px;
 	border: #0065FC 8px solid;
-	/* visibility: hidden; */
 	display: none;
 	
 } 
@@ -140,9 +138,20 @@ input {
 .circle{
 	background-color: #DEEBFF;
 	margin: 0px 12px 0 0;
-	padding: 16px 16px;
+	/* padding: 16px 16px; */
+	padding: 28px;
+
+	position: relative;
+	right: 10px;
+	
+
+
+
 	border-radius: 50px;
 }
+/* .block-filtre__filtres{
+	padding:  20px 0 ;
+} */
 .block-filtre__filtres__lien{
 	margin: 0px 10px 10px 10px;
 	padding: 0px 20px 0 0;
@@ -170,7 +179,7 @@ input {
 }
 
 .filtres-main{
-	font-weight: bold;
+	font-weight: 900;
 	border: none;
 }
 
@@ -185,6 +194,7 @@ input {
 	border: 3px solid #F2F2F2;
 	padding: 9px;
 	border-radius: 360%;
+	margin-right: 1em;
 }
 .logo-information__padding{
 	/* padding: 0px 20px 0 20px; */
@@ -238,14 +248,13 @@ input {
 	/* overflow: hidden; */
 }
 .hébergement-img
-/* peut être nommer "child" ? */
 {
 	/* border: gold dotted 7px; */
 	border-radius: 23px;
 	background-color: white;
-	padding: 1px 7px;
-	margin-bottom: 20px;
-	margin-right: 20px;
+	padding: 1px 20px;
+	margin-bottom: 30px;
+	margin-right: 40px;
 	box-shadow: black 0 0 10px -4px;
 	line-height: 0.3;
 	
@@ -254,6 +263,7 @@ input {
 {
 	/* color: darkorchid; */
 	padding: 40px 20px;
+	/* padding: 40px 40px; */
 	border-radius: 45px;
 }
 
@@ -519,7 +529,7 @@ footer #container
 {
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
+	/* justify-content:space-between; */
 	margin: 40px 0;
 	padding: 25px ;
 	color: black;
@@ -532,6 +542,7 @@ footer #container
 footer .container__items
 {
 	padding-left: 0;
+	width: 33%;
 	
 }
 
@@ -574,7 +585,6 @@ footer .container__items
 		display: none;
 	}
 	.search{
-		/* visibility:unset */
 		display:unset;
 	}
 /* mettre en column aside d'abord puis section */
@@ -639,7 +649,8 @@ footer .container__items
 		display: unset;
 		color:  #0065FC;
 		align-items: center;
-		font-weight: bold;
+		font-weight:900;
+		padding-right: 1.4em;
 		
 		
 	}
