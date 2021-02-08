@@ -53,6 +53,7 @@ header img
 	color:#0065FC;
 	border-top:4px solid #0065FC;
 	order: 1;
+	padding-top: 37px!important;
 }
 .element:nth-child(2)
 {
@@ -64,7 +65,7 @@ header img
 {
 	/* s'inscrire */
 	color:#0065FC;
-	font-weight: bold;
+	font-weight: 900;
 	order: 3;
 }
 
@@ -74,6 +75,7 @@ header img
 
 .mini-section__geolocalisation-recherche {
 	display: flex;
+	margin-bottom: 1em;
 }
 .mini-section__icone-geolocalisation{
 	background-color: #F2F2F2;
@@ -88,7 +90,7 @@ header img
 	padding: 5px 20px;
 	border-top: 2px #F2F2F2 solid;
 	border-bottom: 2px #F2F2F2 solid;
-	font-weight: bold;
+	font-weight: 900;
 }
 a{
 	text-decoration: none;
@@ -115,7 +117,7 @@ input {
 	background-color: #0065FC;
 	border-radius: 0px 10px 10px 0;
 	line-height: 33px;
-	font-weight: bold;
+	font-weight: 900;
 }
 .rechercher-color{color: white;}
 /* appliquer search que pour le responsive */
@@ -134,30 +136,35 @@ input {
 
 /* filtres */
 /* block-filtre */
-
 .circle{
 	background-color: #DEEBFF;
 	margin: 0px 12px 0 0;
 	/* padding: 16px 16px; */
-	padding: 28px;
-
+	padding: 1em;
 	position: relative;
 	right: 10px;
-	
-
-
-
 	border-radius: 50px;
 }
-/* .block-filtre__filtres{
-	padding:  20px 0 ;
-} */
+.block-filtre__filtres{
+	display: flex;
+	position: relative;
+	min-height: 3em;
+	margin-bottom: 1em;
+}
+.block-filtre__fusion{
+	position: absolute;
+	left: 0;
+	right: auto;
+}
+
+
 .block-filtre__filtres__lien{
-	margin: 0px 10px 10px 10px;
-	padding: 0px 20px 0 0;
+	/* font-size: 1.5em; */
+	margin: 0px 10px 0px 10px;
+	padding: 0px 25px 0 45px;
 	border-radius: 70px 80px  80px 70px;
 	
-	font-weight: bold;
+	font-weight: 900;
 	border-top: 4px #f2f2f2 solid;
 	border-bottom: 4px #F2F2F2 solid;
 	border-right: 4px  #f2f2f2 solid;
@@ -169,7 +176,7 @@ input {
 .block-filtre__filtres__lien:hover{
 	border: #0065FC solid 3px;
 	transform: scale(1.1);
-	background-color: #F2F2F2;
+	/* background-color: #F2F2F2; */
 	color: #0065FC;
 }
 .block-filtre__filtres__lien:hover:nth-child(1){
@@ -181,6 +188,8 @@ input {
 .filtres-main{
 	font-weight: 900;
 	border: none;
+	margin: 0 3em 0 0;
+	line-height: 3em;
 }
 
 .block-filtres
@@ -210,7 +219,7 @@ input {
 	display: flex;
 	
 }
-.carte-de-présentation-hébergement-à-marseille
+.carte-de-presentation-hebergement-à-marseille
 {
 	/* border: green dashed 4px; */
 	display: flex;
@@ -222,7 +231,7 @@ input {
 }
 
 
-.hébergement-à-marseille--dimension-image
+.hebergement-à-marseille--dimension-image
 {
 	/* border: blue 12px solid; */	
 	height: 174px;
@@ -235,31 +244,31 @@ input {
 }
 .bold
 {
-	font-weight: bold;
+	font-weight: 900;
 }
 
-.hébergement-img__description-chambre
+.hebergement-img__description-chambre
 {
 	padding-left: 15px;
 }
-.hébergement-img-float {
+.hebergement-img-float {
 	float: left;
 	margin-top: 7px;
 	/* overflow: hidden; */
 }
-.hébergement-img
+.hebergement-img
 {
 	/* border: gold dotted 7px; */
 	border-radius: 23px;
 	background-color: white;
-	padding: 1px 20px;
+	padding: 1px 8px;
 	margin-bottom: 30px;
 	margin-right: 40px;
 	box-shadow: black 0 0 10px -4px;
 	line-height: 0.3;
 	
 }
-.présentation-hébergement-populaire
+.presentation-hebergement-populaire
 {
 	/* color: darkorchid; */
 	padding: 40px 20px;
@@ -268,7 +277,7 @@ input {
 }
 
 
-.carte-de-présentation-les-plus-populaires
+.carte-de-presentation-les-plus-populaires
 {
 	/* border:  green dashed 4px; */
 	background-color: #F2F2F2;
@@ -336,6 +345,8 @@ et geolocalisation en bleu */
 {color: #F2F2F2;}
 .icon-white
 {color: white;}
+
+
 
 
 
@@ -543,6 +554,7 @@ footer .container__items
 {
 	padding-left: 0;
 	width: 33%;
+	list-style: none;
 	
 }
 
@@ -562,6 +574,16 @@ footer .container__items
 	/* margin: 12px 0 27px 12px; */
 	margin-bottom: 27px;
 }
+
+footer li:first-child 
+	{
+		color:black;
+		font-weight: bold;
+		padding-bottom: 12px;
+		font-size: 1.3em;
+		width: 100%;
+		
+	}
 
 /* fin footer */
 
@@ -588,10 +610,10 @@ footer .container__items
 		display:unset;
 	}
 /* mettre en column aside d'abord puis section */
-.carte-de-présentation-les-plus-populaires {
+.carte-de-presentation-les-plus-populaires {
 	border-radius: unset;
 }
-.carte-de-présentation-hébergement-à-marseille {
+.carte-de-presentation-hebergement-à-marseille {
 	background-color: white;
 }
 
@@ -611,37 +633,30 @@ footer .container__items
 	}
 
 
-	/* .heber */ 
-	a.element:nth-child(1)
+
+	#hebergement
 	{
 		border-top:unset ;
-		
 		padding-bottom: 40px;
 		border-bottom: #0065FC 3px solid;
 		width: 50%;
-		/* margin: 0; */
-		/* padding: 0; */
 		padding-left: unset;
 		padding-right:unset;
 		padding-bottom: 20px;
 		/* box-shadow: 0px 04px 65px  */
 	}
-	/* .activites */
-	a.element:nth-child(2)
+	#activites
 	{
-		/* background-color: tomato; */
 		padding-bottom: 40px;
 		border-bottom: #F2F2F2 3px solid;
 		width: 50%;
-		/* margin: 0; */
 		padding-left: unset;
 		padding-right: unset;
 		padding-bottom: 20px;
 	}
-	/* du coup le dernier child sert seulement a cacher */
-	a.element:nth-child(3)
+
+	#sinscrire
 	{
-		/* order:-1; */
 		display:none;
 	}
 
@@ -662,13 +677,18 @@ footer .container__items
 		align-items: center;
 	}
 
+
+	.hebergement-à-marseille--dimension-image{
+		width: 80vw;
+		height: 195px;
+	}
+	
+
+
+
 /* activites responsive */
 
-/* .activites__cadre {
 
-width: 80vw;
-height: 68px; 
-} */
 
 .activites__cadre__img-1, .activites__cadre__img-2,
 .activites__cadre__img-3, .activites__cadre__img-4,
@@ -682,7 +702,7 @@ height: 68px;
 
 }
 
-.quatrieme-colonne{
+.quatrieme-colonne, .deuxieme-colonne{
 	display: unset;
 }
 
@@ -704,25 +724,23 @@ height: 68px;
 		
 		flex-wrap: wrap;
 		justify-content: flex-end;
+		
 	}
 
 
-
-
-}
-footer li:first-child 
+	footer .container__items{
+		width:unset;
+		line-height: 2em;
+		
+	}
+	.items__list
 	{
-		color:black;
-		font-weight: bold;
-		padding-bottom: 12px;
-		font-weight: bold;
-		font-size: 1.3em;
+		padding:2px;
+		list-style-type: none;
+		width: 100%;
+		
 	}
-/* li footer */
-.items__list
-{
-	padding:2px;
-	list-style-type: none;
+
+
+
 }
-/* .items:nth-child(1)
-{color: brown;} */
