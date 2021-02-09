@@ -4,20 +4,26 @@
         <meta charset="utf-8" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="projet_02.css" />
         <!-- <link rel="stylesheet" href="divboxnthchild.css" /> -->
         <title>Réservia voyage</title>
         <script src="https://kit.fontawesome.com/6b523981c6.js" crossorigin="anonymous"></script>
     </head> 
-    <body>   
+    <body>
+    <div class="page">
         <header>
                 
             <div id="logo-titre-principale">
                 <img src="images/logo/Reservia.png" alt="logo" />
-                <a class="logo-titre-principale__only-responsive">S'inscrire </a>
+                <a class="logo-titre-principale__only-responsive-sinscrire">S'inscrire </a>
             </div>
                 <nav id="conteneur-nav" >   
-                    <a href="#hebergement" class="element conteneur-nav__heber">Hébergements</a>
+                    <a href="#hebergement" class="element conteneur-nav__hebergement">Hébergements</a>
                     <a href="#activites" class="element conteneur-nav__activites">Activités</a>
                     <a id="sinscrire" class="element conteneur-nav__sinscrire">S'inscrire</a>
                 </nav>
@@ -35,26 +41,23 @@
                         <p class="search"><i class="icon-white fas fa-search"></i></p>
                     </div>
 
-                <nav class="block-filtres">
-                    <!-- <div class="block-filtre__filtres "> -->
-                    <p class="   filtres-main">Filtres</p>
-                    <div class="block-filtre__filtres"><i class="block-filtre__fusion circle fas fa-money-bill-wave"></i><p class="  block-filtre__filtres__lien">Économique</p></div>
-                    <div class="block-filtre__filtres"><i class="block-filtre__fusion circle fas fa-child"></i><p class="  block-filtre__filtres__lien">Familial</p></div>
-                    <div class="block-filtre__filtres"><i class="block-filtre__fusion circle fas fa-heart"></i><p class="  block-filtre__filtres__lien">Romantique</p></div>
-                    <div class="block-filtre__filtres"><i class="block-filtre__fusion circle fas fa-dog"></i><p class="  block-filtre__filtres__lien">Animaux autorisés</p></div>   
-
+                <nav class="filtre">
+                    <p class="filtre__main">Filtres</p>
+                    <div class="filtre__lien"><i class="filtre__lien__fusion circle fas fa-money-bill-wave"></i><p class="  filtre__lien__texte">Économique</p></div>
+                    <div class="filtre__lien"><i class="filtre__lien__fusion circle fas fa-child"></i><p class="  filtre__lien__texte">Familial</p></div>
+                    <div class="filtre__lien"><i class="filtre__lien__fusion circle fas fa-heart"></i><p class="  filtre__lien__texte">Romantique</p></div>
+                    <div class="filtre__lien"><i class="filtre__lien__fusion circle fas fa-dog"></i><p class="  filtre__lien__texte">Animaux autorisés</p></div>
                 </nav> 
-            
-                <div id=logo_information>
-                    <p class="logo-information__padding"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+                    <p class="logo-information">
+                        <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+                    </p>
         </section>    
-    <div class="container-section_hébergement-et-aside_les-plus-populaires">
+    <div class="container-section_hebergement-et-aside_les-plus-populaires">
         <section >
-            <div class=" carte-de-presentation-hebergement-à-marseille presentation-hebergement-populaire">
+            <div class=" carte-de-presentation-hebergement-a-marseille presentation-hebergement-populaire">
                 <h2 id="hebergement" class="title-on-top">Hébergements à Marseille</h2>
                     <a href="#" class="hebergement-img">
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="error-404" /></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="error-404" /></p>
                         <div class="hebergement-img__description-chambre">
                             <p class="bold">Auberge de la Cannebière</p>
                             <p>Nuit à partir de <span class="bold">25 €</span></p>
@@ -62,7 +65,7 @@
                         </div>
                     </a>
                     <a href="#" class="hebergement-img">
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="img"/></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="img"/></p>
                         <div class="hebergement-img__description-chambre">
                             <p class="bold">Hôtel du port</p>
                             <p >Nuit à partir de 52€</p>
@@ -71,7 +74,7 @@
                     </a>
                     <a href="#" class="hebergement-img">
                         
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" /></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" /></p>
                         <div class="hebergement-img__description-chambre">  
                             <p class="bold">Hôtel les mouettes</p>
                             <p>Nuit à partir de 76€</p>
@@ -80,7 +83,7 @@
                     </a>
                     <a href="#" class="hebergement-img">
                         
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" /></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" /></p>
                         <div class="hebergement-img__description-chambre"> 
                             <p class="bold">Hôtel de la mer</p>
                             <p>Nuit à partir de 46€</p>
@@ -88,7 +91,7 @@
                         </div>
                     </a>
                     <a href="#" class="hebergement-img"> 
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" /></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" /></p>
                         <div class="hebergement-img__description-chambre">
                            <p class="bold">Auberge Le Panier</p>
                            <p>Nuit à partir de <span class="bold">23 €</span></p>
@@ -96,7 +99,7 @@
                         </div>
                     </a> 
                     <a href="#" class="hebergement-img">      
-                        <p class="hebergement-img-float"><img class="hebergement-à-marseille--dimension-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" /></p>
+                        <p class="hebergement-img-float"><img class="hebergement-a-marseille--dimension-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" /></p>
                         <div class="hebergement-img__description-chambre"> 
                             <p class="bold"> Hôtel chez Amina</p>
                             <p>Nuit à partir de 96€</p>
@@ -106,7 +109,7 @@
                 <p class="at-the-bottom">afficher plus</p>            
             </div>   
         </section>
-    </div>
+    
         <aside>
             <div class="carte-de-presentation-les-plus-populaires presentation-hebergement-populaire">
                 <h2 class="title-on-top">Les plus populaires</h2>
@@ -141,18 +144,19 @@
             <h2> Activités à Marseille</h2>
                 <!-- <div class="activites__container"> -->
                     
-                    <a href="#" class="activites__cadre-1 activites__cadre"><!-- image --><div class="activites__cadre__img-1"></div><!--fin image --><p class="activites__cadre__description ">Vieux Port</p></a>
+                    <a href="#" class="activites__cadre-1 activites__cadre"><!-- image --><div class="activites__cadre__img activites__cadre__img-1"></div><!--fin image --><p class="activites__cadre__description ">Vieux Port</p></a>
                     <div class="deuxieme-colonne">
-                        <a href="#" class="activites__cadre-2 activites__cadre"><!-- image --><div class="activites__cadre__img-2 "></div><!-- fin_image --><p class="activites__cadre__description">Fort de Pomègues</p></a>
-                        <a href="#" class="activites__cadre-3 activites__cadre "><div class="activites__cadre__img-3"></div><p class="activites__cadre__description ">Îles du Frioul</p></a>
+                        <div  class="activites__cadre-2 activites__cadre"><a href="#"><!-- image --><div class="activites__cadre__img activites__cadre__img-2 "></div><!-- fin_image --><p class="activites__cadre__description">Fort de Pomègues</p></a></div>
+                        <div  class="activites__cadre-3 activites__cadre"><a href="#"><div class="activites__cadre__img activites__cadre__img-3"></div><p class="activites__cadre__description ">Îles du Frioul</p></a></div>
                     </div>
-                    <a href="#" class="activites__cadre-4 activites__cadre "><div class="activites__cadre__img-4"></div><p class="activites__cadre__description">Parc National des Calanques</p></a>
+                    <a href="#" class="activites__cadre-4 activites__cadre "><div class="activites__cadre__img activites__cadre__img-4"></div><p class="activites__cadre__description">Parc National des Calanques</p></a>
                     <div class="quatrieme-colonne">
-                        <a href="#" class="activites__cadre-5 activites__cadre "><div class="activites__cadre__img-5"></div><p class="activites__cadre__description">Notre-Dame-de-la-Garde</p></a>
-                        <a href="#" class="activites__cadre-6 activites__cadre "><div class="activites__cadre__img-6"></div><p class="activites__cadre__description">Parc Longchamp</p></a>
+                        <a href="#"><div  class="activites__cadre-5 activites__cadre "><div class="activites__cadre__img activites__cadre__img-5"></div><p class="activites__cadre__description">Notre-Dame-de-la-Garde</p></div></a>
+                        <div  class="activites__cadre-6 activites__cadre "><a href="#"><div class="activites__cadre__img activites__cadre__img-6"></div><p class="activites__cadre__description">Parc Longchamp</p></a></div>
                     </div>
                 <!-- </div> -->
         </section>
+    </div>
         <footer>
             <div id="container">
                 <ul class="container__items"> 
@@ -175,7 +179,6 @@
                     <li class="items__list"> Nous contacter</li>
                 </ul>
             </div>
-
         </footer>
     </body>
 </html>
