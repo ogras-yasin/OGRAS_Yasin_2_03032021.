@@ -10,16 +10,13 @@ body
 }
 
 /* header */
-header
-/* ca permet de mettre en flex le logo et la liste */
-{
+header{
 	display:flex;
 	justify-content: space-between;
 	flex-direction: row;
 }
 
-#logo-titre-principale
-{
+#logo-titre-principale{
 	display: flex;
 } 
 
@@ -30,31 +27,24 @@ header img
 	height: 70px;
 }
 
-#conteneur-nav
-{
-	
+#conteneur-nav{
 	display:flex;
 	flex-direction:row; 
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
-	/* border: 6px dotted yellowgreen; */
-
 }
 
 .logo-titre-principale__only-responsive-sinscrire{
 	display: none;
 }
-.element
-{	
+.element{	
 	list-style-type: none;
 	padding: 40px 20px 0px;
 	text-decoration:none;
 }
 
-.conteneur-nav__hebergement
-{
-	/* hebergements */
+.conteneur-nav__hebergement{
 	color:#0065FC;
 	border-top:4px solid #0065FC;
 	order: 1;
@@ -102,12 +92,6 @@ a{
 	color: black;
 }
 
-/* input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-} */
 input {
 	outline:none;
 	border-style: none;
@@ -144,7 +128,6 @@ input {
 .circle{
 	background-color: #DEEBFF;
 	margin: 0px 12px 0 0;
-	/* padding: 16px 16px; */
 	padding: 1em;
 	position: relative;
 	right: 10px;
@@ -178,11 +161,12 @@ input {
 	align-items: center;
 } 
 
-.block-filtre__filtres__lien:hover{
-	border: #0065FC solid 3px;
+.filtre__lien__texte:hover{
+	border: #0065FC solid 1px;
 	transform: scale(1.1);
 	/* background-color: #F2F2F2; */
 	color: #0065FC;
+	box-shadow: 0 0 0.2em  black;
 }
 .block-filtre__filtres__lien:hover:nth-child(1){
 	border: none;
@@ -267,13 +251,21 @@ input {
 	line-height: 0.3;
 	
 }
+
+
 .presentation-hebergement-populaire
 {
 	/* color: darkorchid; */
-	padding: 40px 20px;
+	padding: 2rem;
 	border-radius: 45px;
 }
-
+.les-plus-populaires__titre{
+	display: flex;
+	align-items: center;
+}
+.fa-chart-line{
+	font-size: 1.8rem;
+}
 
 .carte-de-presentation-les-plus-populaires
 {
@@ -289,9 +281,9 @@ aside .les-plus-populaires-img
 	box-shadow: black 0 0 10px -4px;
 	 
 	height: auto;
-	width: 384px;
+	min-width: 384px;
 	overflow: hidden;
-	margin-bottom: 12px;
+	margin:2rem 0
 }
 .titre-img
 {
@@ -316,22 +308,15 @@ et geolocalisation en bleu */
  .fas
 {
 	color:#0065FC;
-
 	/* border: turquoise solid 3px; */
 }
-/* .fa-child{
-	transform: translate(50px, 50px);
-} */
 
-/* centrage des logos icones */
 .fa-child:before{
 	margin: 0 1.6px;
 }
 .fa-info:before {
 	margin: 5px;
 }
-
-
 
 /* couleur des icon */
  .icon-black  
@@ -374,15 +359,74 @@ et geolocalisation en bleu */
 	background-size: cover;
 	border-radius: 23px  23px 0 0;
 	background-repeat: no-repeat;
+	/* margin: 7px 15px 7px 7px; */
 }
 
+/* populaires img  */
 
+.populaires__cadre__img{
+	/* width: 18vw;
+	min-width: 330px ;
+	max-width: 450px; */
+	background-position: center;
+	background-size: cover;
+	border-radius: 23px  23px 0 0;
+	background-repeat: no-repeat;
+}
+.aga{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	line-height: 0.5em;
+	padding: 0 0 0 1em;
+} 
 
+.learn{
+	line-height: 1em;
+}
+/* .canim{
+	align-self:;
+} */
 
+.populaires__cadre__img{
+	height: 200px;
+	width: 200px;
+	border-radius: 23px 0 0 23px;
+}
 
-.activites__cadre-1{
+.populaires__cadre__img-1{
+	background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.populaires__cadre__img-2{
+	background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.populaires__cadre__img-3{
+	background-image: url("images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+.populaires__cadre{
+	display: flex;
+	background-color: wheat;
+	/* border: sienna 5px dashed; */
+	border-radius: 23px;
+	background-color: white;
+	box-shadow: black 0 0 10px -4px;
+	 
+	height: auto;
+	/* min-width: 384px; */
+	overflow: hidden;
+	margin:2rem 0;
+	padding: 0.4em;
 	
 }
+
+
+
+
+/* .activites__cadre-1{
+	
+} */
 
 .activites__cadre__img-1{
 	height: 468px;
@@ -390,22 +434,10 @@ et geolocalisation en bleu */
 
 }
 
-
-.activites__cadre-2{
-
-}
 .activites__cadre__img-2 {
 	height: 240px;
 
 	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-
-	/* border: darkorchid 4px solid; */
-	
-
-}
-
-.activites__cadre-3 {
-
 
 }
 
@@ -416,20 +448,10 @@ et geolocalisation en bleu */
 	
 }
 
-
-.activites__cadre-4 {
-	
-}
-
 .activites__cadre__img-4 {
 	height: 468px;
 	
 	background-image: url("images/activites/4_small/bitcoin.jpg");
-}
-
-
-
-.activites__cadre-5 {
 }
 
 .activites__cadre__img-5 {
@@ -438,18 +460,11 @@ et geolocalisation en bleu */
 	
 }
 
-
-.activites__cadre-6 {
-
-}
-
 .activites__cadre__img-6 {
 	height: 190px;
 	background-image: url("images/activites/4_small/naomi.jpg");
 	
 }
-
-
 
 .activites__cadre__description {
 	/* border: darkred 5px solid; */
@@ -489,13 +504,13 @@ footer .container__items
 	
 }
 
-.at-the-bottom
+.hebergement-afficher-plus
 {
 	
 	font-weight:bold ;
-	text-transform: capitalize; 
 	margin: 12px 0 12px 12px;
 	width: 100%;
+	font-size: 1.3em;
 }
 
  .title-on-top 
@@ -521,24 +536,45 @@ footer li:first-child
 
 * {box-sizing: border-box;}
 
+/* tablette */
+@media all and (max-width: 1200px) and (min-width:800px){
+
+	.container-section_hebergement-et-aside_les-plus-populaires{
+		display: flex;
+		flex-direction:column-reverse;
+		/* justify-content:flex-end; */
+		background-color: violet;
+		}
+	
+	
+	
+}
 
 
 
-/*(https://www.fontsquirrel.com) on January 7, 2021 */
-@media all and (max-width: 650px)
-/* @media all and (max-width: 1024 px) par défault*/
-/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+/* phone */
+@media all and (max-width: 800px)
 {
 
+	.container-section_hebergement-et-aside_les-plus-populaires{
+		display: flex;
+		flex-direction:column-reverse;
+		justify-content:flex-end;
+		}
+	
+	
 	.page{
 		margin: 0;
 		padding: unset;
 	}
 	/* mini section */
-	.filtres-main{
+	.filtre__main{
 		width: 100%;
 	}
 
+	.mini-section{
+		padding: 2rem;
+	}
 	.mini-section__rechecher{
 		display: none;
 	}
@@ -549,17 +585,14 @@ footer li:first-child
 .carte-de-presentation-les-plus-populaires {
 	border-radius: unset;
 }
-.carte-de-presentation-hebergement-a-marseille {
-	background-color: white;
-}
 
 
-.container-section_hébergement-et-aside_les-plus-populaires
+/* .container-section_hebergement-et-aside_les-plus-populaires
 {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
-}
+} */
 
 
 /* header responsive */
@@ -567,9 +600,6 @@ footer li:first-child
 	header{
 		display: unset;
 	}
-
-
-
 	.conteneur-nav__hebergement
 	{
 		border-top:unset ;
@@ -602,8 +632,7 @@ footer li:first-child
 		align-items: center;
 		font-weight:700;
 		padding-right: 1.4em;
-		
-		
+			
 	}
 	#logo-titre-principale{
 		display: flex;
@@ -613,37 +642,67 @@ footer li:first-child
 		align-items: center;
 	}
 
-.container-section_hebergement-et-aside_les-plus-populaires{
+	/* .carte-de-presentation-hebergement-a-marseille{
+		margin: 2rem;
+	} */
+
+	.carte-de-presentation-les-plus-populaires{
+		padding: 2rem;
+		margin: 0rem;
+	}
+
+	.hebergement-img{
+		margin: 0 0 60px 0;
+	}
+
+/* .container-section_hebergement-et-aside_les-plus-populaires{
 	display: flex;
 	flex-direction: column-reverse;
-}
+} */
 
 .carte-de-presentation-hebergement-a-marseille {
-	padding-left: 0.2em;
-	padding-right: 0;
+	padding: 0;
+	background-color: white;
 }
-	.hebergement-a-marseille--dimension-image{
-		/* width: 80vw;
-		height: 195px; */
-		width: 90vw;
+	.hebergement-a-marseille--dimension-image,
+	.activites__cadre__img{
+
+	width: 80vw;
 	height: 195px; 
 	max-width: unset;
+	}
+	/* .activites{
+		margin: 2rem;
+	} */
+
+	aside .les-plus-populaires-img__dimension-image,
+	
+	{
+	width: 74vw ;
+	height: 195px; 
 	}
 
 /* activites responsive */
 
-
-
-.activites__cadre__img {
-	width: 90vw;
-	height: 195px; 
-	max-width: unset;
-	/* margin-left: 1px; */
+.carte-de-presentation-hebergement-a-marseille,
+.activites{
+	justify-content: center;
+	/* width: 80vw; */
+	margin: 2rem;
 }
-.activites__cadre{
-	margin-left: 4px;
 
+.activites__cadre,{
+	/* margin-left: 4px; */
+	margin: 0;
 }
+
+
+.activites h2{
+	width: 80vw;
+	/* margin: 2rem; */
+}
+
+
 /* 
 .quatrieme-colonne, .deuxieme-colonne{
 	display: flex;
@@ -658,10 +717,9 @@ footer li:first-child
 		color: black;
 		/* border: 20px dotted brown; */
 		display: flex;
-		
 		flex-wrap: wrap;
 		justify-content: flex-end;
-		
+		padding: 2rem;
 	}
 
 	
@@ -675,7 +733,6 @@ footer li:first-child
 		padding:2px;
 		list-style-type: none;
 		width: 100%;
-		
 	}
 
 
