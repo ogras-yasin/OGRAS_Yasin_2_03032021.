@@ -86,6 +86,7 @@ header img
 	border-top: 2px #F2F2F2 solid;
 	border-bottom: 2px #F2F2F2 solid;
 	font-weight: 700;
+
 }
 a{
 	text-decoration: none;
@@ -206,7 +207,7 @@ input {
 	/* border: 23px solid red; */
 	display: flex;
 }
-.carte-de-presentation-hebergement-a-marseille
+.hebergement
 {
 	/* border: green dashed 4px; */
 	display: flex;
@@ -289,22 +290,14 @@ aside .les-plus-populaires-img
 {
 	margin-top: 21px;
 }
-.float-img-populaires
-{
-	float: left;
-	margin: 7px 15px 7px 7px;
-}
-aside .les-plus-populaires-img__dimension-image
-{
+
+aside .les-plus-populaires-img__dimension-image{
 	/* border: 24px solid khaki; */
 	height: 200px;
 	width: 200px;
 	border-radius: 23px 0 0 23px;
 }
 
-/* si je met "i.fas" ca annule toutes les autres
-règles comme 5 étoiles bleu par tout 
-et geolocalisation en bleu */
  .fas
 {
 	color:#0065FC;
@@ -362,16 +355,16 @@ et geolocalisation en bleu */
 	/* margin: 7px 15px 7px 7px; */
 }
 
-/* populaires img  */
-
 .populaires__cadre__img{
 	/* width: 18vw;
 	min-width: 330px ;
 	max-width: 450px; */
 	background-position: center;
 	background-size: cover;
-	border-radius: 23px  23px 0 0;
+	border-radius: 23px  0 0 23px ;
 	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
 }
 .aga{
 	display: flex;
@@ -384,15 +377,7 @@ et geolocalisation en bleu */
 .learn{
 	line-height: 1em;
 }
-/* .canim{
-	align-self:;
-} */
 
-.populaires__cadre__img{
-	height: 200px;
-	width: 200px;
-	border-radius: 23px 0 0 23px;
-}
 
 .populaires__cadre__img-1{
 	background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
@@ -408,25 +393,14 @@ et geolocalisation en bleu */
 .populaires__cadre{
 	display: flex;
 	background-color: wheat;
-	/* border: sienna 5px dashed; */
 	border-radius: 23px;
-	background-color: white;
+	/* background-color: white; */
 	box-shadow: black 0 0 10px -4px;
-	 
 	height: auto;
-	/* min-width: 384px; */
 	overflow: hidden;
 	margin:2rem 0;
 	padding: 0.4em;
-	
 }
-
-
-
-
-/* .activites__cadre-1{
-	
-} */
 
 .activites__cadre__img-1{
 	height: 468px;
@@ -436,21 +410,18 @@ et geolocalisation en bleu */
 
 .activites__cadre__img-2 {
 	height: 240px;
-
 	background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 
 }
 
 .activites__cadre__img-3 {
 	height: 140px;
-	
 	background-image: url("images/activites/4_small/iles-du-frioul.jpg");
 	
 }
 
 .activites__cadre__img-4 {
 	height: 468px;
-	
 	background-image: url("images/activites/4_small/bitcoin.jpg");
 }
 
@@ -556,13 +527,26 @@ footer li:first-child
 @media all and (max-width: 800px)
 {
 
+	.mini-section__ville{
+		width: 17em;
+		min-width: 10em;
+	}
+
 	.container-section_hebergement-et-aside_les-plus-populaires{
 		display: flex;
 		flex-direction:column-reverse;
 		justify-content:flex-end;
 		}
 	
-	
+
+	.title-on-top,
+	.hebergement-afficher-plus{
+		width: 90%;
+	}
+	.hebergement-img{
+		margin-bottom: 1em;
+	}
+
 	.page{
 		margin: 0;
 		padding: unset;
@@ -642,27 +626,22 @@ footer li:first-child
 		align-items: center;
 	}
 
-	/* .carte-de-presentation-hebergement-a-marseille{
-		margin: 2rem;
-	} */
-
 	.carte-de-presentation-les-plus-populaires{
 		padding: 2rem;
 		margin: 0rem;
 	}
 
 	.hebergement-img{
-		margin: 0 0 60px 0;
+		margin: 0 0 1.34em 0;
 	}
 
-/* .container-section_hebergement-et-aside_les-plus-populaires{
-	display: flex;
-	flex-direction: column-reverse;
-} */
-
-.carte-de-presentation-hebergement-a-marseille {
-	padding: 0;
+.hebergement,
+.activites {
+	justify-content: center;
 	background-color: white;
+	margin: 0;
+	padding: 1.3em;
+}
 }
 	.hebergement-a-marseille--dimension-image,
 	.activites__cadre__img{
@@ -671,9 +650,6 @@ footer li:first-child
 	height: 195px; 
 	max-width: unset;
 	}
-	/* .activites{
-		margin: 2rem;
-	} */
 
 	aside .les-plus-populaires-img__dimension-image,
 	
@@ -684,12 +660,7 @@ footer li:first-child
 
 /* activites responsive */
 
-.carte-de-presentation-hebergement-a-marseille,
-.activites{
-	justify-content: center;
-	/* width: 80vw; */
-	margin: 2rem;
-}
+
 
 .activites__cadre,{
 	/* margin-left: 4px; */
@@ -699,7 +670,7 @@ footer li:first-child
 
 .activites h2{
 	width: 80vw;
-	/* margin: 2rem; */
+
 }
 
 
