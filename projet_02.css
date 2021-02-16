@@ -433,7 +433,38 @@ footer .container__items
 
 * {box-sizing: border-box;}
 
+<<<<<<< Updated upstream
 /*(https://www.fontsquirrel.com) on January 7, 2021 */
+=======
+/* tablette */
+@media all and (max-width: 1400px) and (min-width:800px){
+
+	.container-hebergement-populaires{
+		/* display: flex; */
+		flex-direction:column-reverse;
+	}
+
+	.populaires{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.les-plus-populaires__titre{
+		width: 100%;
+	}
+	.populaires__cadre{
+		width: 30%;
+		margin: 0 1%;
+	}
+
+	.quatrieme-colonne{
+		display: flex;
+	}
+}
+
+
+
+/* phone */
+>>>>>>> Stashed changes
 @media all and (max-width: 800px)
 /* @media all and (max-width: 1024 px) par défault*/
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
