@@ -222,19 +222,9 @@ input {
 	font-weight: 700;
 }
 
-
-
-
 .hebergement__cadre{
-	/* width: 500px; */
-	/* height: 300px; */
-	background-color: yellowgreen;
-		/* border: gold dotted 7px; */
 		border-radius: 23px;
-		
 		padding: 8px;
-		/* margin-bottom: 30px;
-		margin-right: 40px; */
 		margin: 15px 20px;
 		box-shadow: black 0 0 10px -4px;
 		line-height: 0.3em;
@@ -414,9 +404,8 @@ aside .les-plus-populaires-img__dimension-image{
 
 .populaires__cadre{
 	display: flex;
-	background-color: wheat;
 	border-radius: 23px;
-	/* background-color: white; */
+	background-color: white;
 	box-shadow: black 0 0 10px -4px;
 	height: auto;
 	overflow: hidden;
