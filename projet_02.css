@@ -202,9 +202,7 @@ input {
 
 /* fin filtres */
 
-.container-section_hebergement-et-aside_les-plus-populaires
-{
-	/* border: 23px solid red; */
+.container-hebergement-populaires{
 	display: flex;
 }
 .hebergement
@@ -219,38 +217,62 @@ input {
 }
 
 
-.hebergement-a-marseille--dimension-image
-{
-	/* border: blue 12px solid; */	
-	height: 174px;
-	width: 340px; 
-	border-radius: 23px 23px 0 0px;
-}
 .bold
 {
 	font-weight: 700;
 }
 
-.hebergement-img__description-chambre
-{
-	padding-left: 15px;
+
+
+
+.hebergement__cadre{
+	/* width: 500px; */
+	/* height: 300px; */
+	background-color: yellowgreen;
+		/* border: gold dotted 7px; */
+		border-radius: 23px;
+		
+		padding: 8px;
+		/* margin-bottom: 30px;
+		margin-right: 40px; */
+		margin: 15px 20px;
+		box-shadow: black 0 0 10px -4px;
+		line-height: 0.3em;
+		
 }
-.hebergement-img-float {
-	float: left;
-	margin-top: 7px;
-	/* overflow: hidden; */
+
+.hebergement__cadre__img{
+	height: 20vh;
+	width: 40vw;
+
+	min-height: 150px;
+	max-height: 225px;
+	min-width: 300px;
+	max-width: 450px;
+
+	background-position: center;
+	background-size: cover;
+	border-radius: 23px  23px 0 0;
+	background-repeat: no-repeat;
 }
-.hebergement-img
-{
-	/* border: gold dotted 7px; */
-	border-radius: 23px;
-	background-color: white;
-	padding: 1px 8px;
-	margin-bottom: 30px;
-	margin-right: 40px;
-	box-shadow: black 0 0 10px -4px;
-	line-height: 0.3;
-	
+
+.hebergement__cadre__img-1{
+	background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+.hebergement__cadre__img-2{
+	background-image:url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" )
+}
+.hebergement__cadre__img-3{
+	background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+.hebergement__cadre__img-4{
+	background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+.hebergement__cadre__img-5{
+	background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+.hebergement__cadre__img-6{
+	background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 
@@ -268,7 +290,7 @@ input {
 	font-size: 1.8rem;
 }
 
-.carte-de-presentation-les-plus-populaires
+.populaires
 {
 	/* border:  green dashed 4px; */
 	background-color: #F2F2F2;
@@ -352,7 +374,7 @@ aside .les-plus-populaires-img__dimension-image{
 	background-size: cover;
 	border-radius: 23px  23px 0 0;
 	background-repeat: no-repeat;
-	/* margin: 7px 15px 7px 7px; */
+
 }
 
 .populaires__cadre__img{
@@ -479,7 +501,8 @@ footer .container__items
 {
 	
 	font-weight:bold ;
-	margin: 12px 0 12px 12px;
+	/* margin: 12px 0 12px 12px; */
+	margin: 20px 0 0 20px;
 	width: 100%;
 	font-size: 1.3em;
 }
@@ -489,7 +512,8 @@ footer .container__items
 	width: 100%;
 	font-weight: bold;
 	/* margin: 12px 0 27px 12px; */
-	margin-bottom: 27px;
+	/* margin-bottom: 27px; */
+	margin: 0 0 20px 20px;
 }
 
 footer li:first-child 
@@ -508,44 +532,61 @@ footer li:first-child
 * {box-sizing: border-box;}
 
 /* tablette */
-@media all and (max-width: 1200px) and (min-width:800px){
+@media all and (max-width: 1400px) and (min-width:800px){
 
-	.container-section_hebergement-et-aside_les-plus-populaires{
-		display: flex;
+	.container-hebergement-populaires{
+		/* display: flex; */
 		flex-direction:column-reverse;
-		/* justify-content:flex-end; */
-		background-color: violet;
-		}
-	
-	
-	
-}
+	}
 
+	.populaires{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.les-plus-populaires__titre{
+		width: 100%;
+	}
+	.populaires__cadre{
+		width: 30%;
+		margin: 0 1%;
+	}
+
+	.quatrieme-colonne{
+		display: flex;
+	}
+}
 
 
 /* phone */
 @media all and (max-width: 800px)
 {
 
+
+	
 	.mini-section__ville{
 		width: 17em;
 		min-width: 10em;
 	}
 
-	.container-section_hebergement-et-aside_les-plus-populaires{
+	.container-hebergement-populaires{
 		display: flex;
 		flex-direction:column-reverse;
-		justify-content:flex-end;
+		/* justify-content:flex-end; */
 		}
+	
+	.hebergement__cadre__img,
+	.hebergement__cadre{
+		width: 100%;
+		max-width: unset;
+		/* min-width: unset */
+	}
 	
 
 	.title-on-top,
 	.hebergement-afficher-plus{
 		width: 90%;
 	}
-	.hebergement-img{
-		margin-bottom: 1em;
-	}
+	
 
 	.page{
 		margin: 0;
@@ -565,18 +606,11 @@ footer li:first-child
 	.search{
 		display:unset;
 	}
-/* mettre en column aside d'abord puis section */
-.carte-de-presentation-les-plus-populaires {
+	
+	.populaires {
 	border-radius: unset;
-}
+	}
 
-
-/* .container-section_hebergement-et-aside_les-plus-populaires
-{
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: flex-end;
-} */
 
 
 /* header responsive */
@@ -626,60 +660,40 @@ footer li:first-child
 		align-items: center;
 	}
 
-	.carte-de-presentation-les-plus-populaires{
+	.populaires{
 		padding: 2rem;
 		margin: 0rem;
 	}
 
-	.hebergement-img{
-		margin: 0 0 1.34em 0;
-	}
 
-.hebergement,
-.activites {
+	.hebergement,
+	.activites {
 	justify-content: center;
 	background-color: white;
 	margin: 0;
 	padding: 1.3em;
-}
-}
+	}
+
 	.hebergement-a-marseille--dimension-image,
 	.activites__cadre__img{
-
 	width: 80vw;
 	height: 195px; 
 	max-width: unset;
-	}
-
-	aside .les-plus-populaires-img__dimension-image,
-	
-	{
-	width: 74vw ;
-	height: 195px; 
 	}
 
 /* activites responsive */
 
 
 
-.activites__cadre,{
+.activites__cadre{
 	/* margin-left: 4px; */
-	margin: 0;
+	margin: 0 0 2em 0;
 }
 
 
-.activites h2{
+	.activites h2{
 	width: 80vw;
-
-}
-
-
-/* 
-.quatrieme-colonne, .deuxieme-colonne{
-	display: flex;
-	flex-direction: column;
-} */
-
+	}
 
 	footer #container
 	{
