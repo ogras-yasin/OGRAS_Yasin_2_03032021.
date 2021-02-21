@@ -285,6 +285,8 @@ input {
 	/* border:  green dashed 4px; */
 	background-color: #F2F2F2;
 	margin:  20px 0px 20px 0;
+	min-width: 500px;
+	width: 20vw;
 }
 aside .les-plus-populaires-img
 {
@@ -531,6 +533,8 @@ footer li:first-child
 	.populaires{
 		display: flex;
 		flex-wrap: wrap;
+		width: 100%;
+		min-width: unset;
 	}
 	.les-plus-populaires__titre{
 		width: 100%;
@@ -542,6 +546,9 @@ footer li:first-child
 
 	.quatrieme-colonne{
 		display: flex;
+	}
+	.hebergement{
+		margin-right: 0;
 	}
 }
 
@@ -598,6 +605,10 @@ footer li:first-child
 	
 	.populaires {
 	border-radius: unset;
+	padding: 2rem;
+	margin: 0rem;
+	width: 100%;
+	min-width: unset;
 	}
 
 
@@ -649,10 +660,7 @@ footer li:first-child
 		align-items: center;
 	}
 
-	.populaires{
-		padding: 2rem;
-		margin: 0rem;
-	}
+	
 
 
 	.hebergement,
