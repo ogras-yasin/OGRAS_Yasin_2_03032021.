@@ -213,6 +213,7 @@ input {
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
 	margin:  20px 34px 20px 0;
+	justify-content: space-evenly;
 	/* overflow: hidden; */
 }
 
@@ -225,7 +226,7 @@ input {
 .hebergement__cadre{
 		border-radius: 23px;
 		padding: 8px;
-		margin: 15px 20px;
+		margin: 15px 0px;
 		box-shadow: black 0 0 10px -4px;
 		line-height: 0.3em;
 		
@@ -234,6 +235,7 @@ input {
 .hebergement__cadre__img{
 	height: 20vh;
 	width: 40vw;
+
 
 	min-height: 150px;
 	max-height: 225px;
@@ -288,9 +290,18 @@ input {
 	min-width: 500px;
 	width: 20vw;
 }
+
+.les-plus-populaires-img{
+	min-width: 200px;
+}
 aside .les-plus-populaires-img
 {
 	/* border: sienna 5px dashed; */
+
+
+	/* width: 800px; */
+	/* min-width: 200px; */
+
 	border-radius: 23px;
 	background-color: white;
 	box-shadow: black 0 0 10px -4px;
@@ -338,13 +349,11 @@ aside .les-plus-populaires-img__dimension-image{
 
 
 
-
-
-
 /* Activites */
 
 .activites{
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -361,7 +370,6 @@ aside .les-plus-populaires-img__dimension-image{
 .activites__cadre__img{
 	width: 18vw;
 	min-width: 330px ;
-	max-width: 450px;
 	background-position: center;
 	background-size: cover;
 	border-radius: 23px  23px 0 0;
@@ -370,15 +378,13 @@ aside .les-plus-populaires-img__dimension-image{
 }
 
 .populaires__cadre__img{
-	/* width: 18vw;
-	min-width: 330px ;
-	max-width: 450px; */
 	background-position: center;
 	background-size: cover;
 	border-radius: 23px  0 0 23px ;
 	background-repeat: no-repeat;
 	height: 200px;
 	width: 200px;
+	min-width: 200px;
 }
 .aga{
 	display: flex;
@@ -471,7 +477,6 @@ footer #container
 {
 	display: flex;
 	flex-direction: row;
-	/* justify-content:space-between; */
 	margin: 40px 0 0;
 	padding: 25px ;
 	color: black;
@@ -492,7 +497,6 @@ footer .container__items
 {
 	
 	font-weight:bold ;
-	/* margin: 12px 0 12px 12px; */
 	margin: 20px 0 0 20px;
 	width: 100%;
 	font-size: 1.3em;
@@ -502,8 +506,6 @@ footer .container__items
 {
 	width: 100%;
 	font-weight: bold;
-	/* margin: 12px 0 27px 12px; */
-	/* margin-bottom: 27px; */
 	margin: 0 0 20px 20px;
 }
 
@@ -525,14 +527,28 @@ footer li:first-child
 /* tablette */
 @media all and (max-width: 1400px) and (min-width:800px){
 
+	.presentation-hebergement-populaire{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.fa-chart-line:before{
+		padding-right: 4rem;
+	}
+	
+	.populaires__cadre__img{
+		min-width: 40%;
+		width: 40%;
+	}
+
+
 	.container-hebergement-populaires{
-		/* display: flex; */
 		flex-direction:column-reverse;
 	}
 
 	.populaires{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 		width: 100%;
 		min-width: unset;
 	}
@@ -562,21 +578,24 @@ footer li:first-child
 	.mini-section__ville{
 		width: 17em;
 		min-width: 10em;
+		padding-left: 0;
+		text-align: center;
 	}
 
 	.container-hebergement-populaires{
 		display: flex;
 		flex-direction:column-reverse;
-		/* justify-content:flex-end; */
 		}
 	
-	.hebergement__cadre__img,
-	.hebergement__cadre{
+	.hebergement__cadre__img{
 		width: 100%;
 		max-width: unset;
-		/* min-width: unset */
+		min-width: unset
 	}
-	
+	.hebergement__cadre{
+		min-width: unset;
+		width: 100%;
+	}
 
 	.title-on-top,
 	.hebergement-afficher-plus{
@@ -609,6 +628,9 @@ footer li:first-child
 	margin: 0rem;
 	width: 100%;
 	min-width: unset;
+	}
+	.populaires__cadre__img{
+		min-width: unset;
 	}
 
 
@@ -654,7 +676,6 @@ footer li:first-child
 	}
 	#logo-titre-principale{
 		display: flex;
-		/* justify-content: flex-end; */
 		align-self: flex-end;
 		justify-content: space-between;
 		align-items: center;
@@ -662,10 +683,13 @@ footer li:first-child
 
 	
 
-
+	.hebergement__cadre{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.hebergement,
 	.activites {
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: white;
 	margin: 0;
 	padding: 1.3em;
@@ -678,12 +702,15 @@ footer li:first-child
 	max-width: unset;
 	}
 
+	.activites__cadre__img{
+		min-width: 0;
+	}
+
 /* activites responsive */
 
 
 
 .activites__cadre{
-	/* margin-left: 4px; */
 	margin: 0 0 2em 0;
 }
 
