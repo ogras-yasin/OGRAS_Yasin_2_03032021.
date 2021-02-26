@@ -1,3 +1,4 @@
+* {box-sizing: border-box;}
 
 body
 {
@@ -109,7 +110,7 @@ input {
 	line-height: 33px;
 	font-weight: 700;
 }
-.rechercher-color{color: white;}
+.rechercher-couleur{color: white;}
 /* appliquer search que pour le responsive */
 .search{
 	position: relative;
@@ -214,7 +215,6 @@ input {
 	background-color: #F2F2F2;
 	margin:  20px 34px 20px 0;
 	justify-content: space-evenly;
-	/* overflow: hidden; */
 }
 
 
@@ -296,12 +296,6 @@ input {
 }
 aside .les-plus-populaires-img
 {
-	/* border: sienna 5px dashed; */
-
-
-	/* width: 800px; */
-	/* min-width: 200px; */
-
 	border-radius: 23px;
 	background-color: white;
 	box-shadow: black 0 0 10px -4px;
@@ -367,26 +361,9 @@ aside .les-plus-populaires-img__dimension-image{
 	
 }
 
-.activites__cadre__img{
-	width: 18vw;
-	min-width: 330px ;
-	background-position: center;
-	background-size: cover;
-	border-radius: 23px  23px 0 0;
-	background-repeat: no-repeat;
 
-}
 
-.populaires__cadre__img{
-	background-position: center;
-	background-size: cover;
-	border-radius: 23px  0 0 23px ;
-	background-repeat: no-repeat;
-	height: 200px;
-	width: 200px;
-	min-width: 200px;
-}
-.aga{
+.populaires__cadre__description{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -419,6 +396,16 @@ aside .les-plus-populaires-img__dimension-image{
 	overflow: hidden;
 	margin:2rem 0;
 	padding: 0.4em;
+}
+
+.populaires__cadre__img{
+	background-position: center;
+	background-size: cover;
+	border-radius: 23px  0 0 23px ;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
+	min-width: 200px;
 }
 
 .activites__cadre__img-1{
@@ -456,6 +443,15 @@ aside .les-plus-populaires-img__dimension-image{
 	
 }
 
+.activites__cadre__img{
+	width: 18vw;
+	min-width: 330px ;
+	background-position: center;
+	background-size: cover;
+	border-radius: 23px  23px 0 0;
+	background-repeat: no-repeat;
+}
+
 .activites__cadre__description {
 	/* border: darkred 5px solid; */
 	margin: 0 10px  ;
@@ -470,7 +466,6 @@ aside .les-plus-populaires-img__dimension-image{
 footer
 {
 	background-color: #F2F2F2;
-
 }
 
 footer #container
@@ -480,7 +475,6 @@ footer #container
 	margin: 40px 0 0;
 	padding: 25px ;
 	color: black;
-
 }
 
 footer .container__items
@@ -490,7 +484,6 @@ footer .container__items
 	list-style: none;
 	line-height: 2em;
 	padding: 1em 0;
-	
 }
 
 .hebergement-afficher-plus
@@ -522,7 +515,7 @@ footer li:first-child
 /* fin footer */
 
 
-* {box-sizing: border-box;}
+
 
 /* tablette */
 @media all and (max-width: 1400px) and (min-width:800px){
@@ -576,8 +569,8 @@ footer li:first-child
 
 	
 	.mini-section__ville{
-		width: 17em;
-		min-width: 10em;
+		width: 100%;
+		min-width: 0;
 		padding-left: 0;
 		text-align: center;
 	}
