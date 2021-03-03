@@ -161,6 +161,9 @@ input {
 	
 	display: flex;
 	align-items: center;
+	transition-property: transform;
+    transition-duration: 0.5s;
+	
 } 
 
 .filtre__lien__texte:hover{
